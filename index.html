@@ -454,6 +454,34 @@
       line-height: 1.35;
     }
 
+    .cv-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .source-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .source-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.38);
+      font-weight: 850;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
     .card {
       border-radius: 8px;
       padding: 24px;
@@ -669,7 +697,7 @@
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
-      .grid, .proof-row { grid-template-columns: 1fr; }
+      .grid, .proof-row, .cv-list { grid-template-columns: 1fr; }
       .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
       .brand span { display: none; }
@@ -776,6 +804,34 @@
     </div>
   </section>
 
+  <section class="deep" id="background">
+    <div class="section-head">
+      <span class="kicker" data-t="cv_kicker">Belén’s background</span>
+      <h2 data-t="cv_title">A facilitator with training, leadership, and real-world field experience.</h2>
+      <p data-t="cv_copy">Public profiles describe Belén as a transformational trainer, coach, and family constellator. Retreat materials also point to psychology and education studies, teaching experience, soft-skills training, and an international Family Constellations certification.</p>
+    </div>
+    <div class="cv-list">
+      <article class="card">
+        <h3 data-t="cv_1_title">Trainer and constellator</h3>
+        <p data-t="cv_1_copy">Retreat Guru and Galápagos retreat materials describe her work in coaching, transformation, emotional healing, and family constellations.</p>
+      </article>
+      <article class="card">
+        <h3 data-t="cv_2_title">Soft-skills foundation</h3>
+        <p data-t="cv_2_copy">Public retreat materials mention teaching experience and training in teamwork, problem-solving, creativity, leadership, and personal growth tools.</p>
+      </article>
+      <article class="card">
+        <h3 data-t="cv_3_title">Leadership under pressure</h3>
+        <p data-t="cv_3_copy">Universidad del Azuay and El Mercurio sources also show Belén in high-performance basketball leadership, including founding ATUC and coaching university teams.</p>
+      </article>
+    </div>
+    <div class="source-links" aria-label="Public source links">
+      <a href="https://retreat.guru/teachers/6655-17/belen-carpio" rel="noopener" target="_blank">Retreat Guru</a>
+      <a href="https://www.livinghealthierideas.com/emotions-galapagos-2025/" rel="noopener" target="_blank">Galápagos retreat profile</a>
+      <a href="https://www.uazuay.edu.ec/prensa/la-pandemia-hizo-que-belen-carpio-funde-su-propio-club-de-baloncesto" rel="noopener" target="_blank">UDA / El Mercurio</a>
+      <a href="https://dspace.uazuay.edu.ec/bitstream/datos/11086/1/16624.pdf" rel="noopener" target="_blank">UDA architecture thesis</a>
+    </div>
+  </section>
+
   <section class="deep" id="method">
     <div class="split">
       <div class="image-panel">
@@ -860,57 +916,57 @@
   <section class="deep" id="session-images">
     <div class="section-head">
       <span class="kicker" data-t="gallery_kicker">Session imagery</span>
-      <h2 data-t="gallery_title">A visual language for therapy, Zoom work, and group configurations.</h2>
-      <p data-t="gallery_copy">The page uses Pexels CDN imagery to make the service feel immediate: private conversation, couples work, virtual support, and group circles where family and ancestral patterns can be seen in space.</p>
+      <h2 data-t="gallery_title">A visual language for expats, established Latin American clients, Zoom work, and group configurations.</h2>
+      <p data-t="gallery_copy">The image mix now leans toward Belén’s real market: mature expats, established Latin American professionals and couples, polished private rooms, Zoom from home, and group work with social presence.</p>
     </div>
     <div class="photo-gallery" aria-label="Therapy and session image gallery">
       <figure class="photo-card tall">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5234577/pexels-photo-5234577.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Two women in a therapy session with one taking notes">
-        <figcaption data-t="gallery_1">Private sessions: attentive listening, notes, and emotional safety.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7447254/pexels-photo-7447254.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mature couple seated together during a counseling conversation">
+        <figcaption data-t="gallery_1">Private work for couples who want a serious, discreet setting.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5234573/pexels-photo-5234573.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Therapist and client seated on a couch in conversation">
-        <figcaption data-t="gallery_2">One-to-one support for repeated family patterns.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8560652/pexels-photo-8560652.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Couple listening during a therapy session">
+        <figcaption data-t="gallery_2">Relationship sessions for loyalty, conflict, belonging, and repair.</figcaption>
       </figure>
       <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8560648/pexels-photo-8560648.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Couple in a therapy session with a therapist">
-        <figcaption data-t="gallery_3">Couples work for loyalty, belonging, conflict, and repair.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/3958377/pexels-photo-3958377.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Therapist speaking with a couple in a bright office">
+        <figcaption data-t="gallery_3">Polished consultation rooms, not generic clinic stock.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/9064373/pexels-photo-9064373.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Therapist comforting a client in a counseling room">
-        <figcaption data-t="gallery_4">A grounded space for difficult material.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8560012/pexels-photo-8560012.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Well-dressed couple in a counseling session">
+        <figcaption data-t="gallery_4">Work for established couples and families with private material.</figcaption>
       </figure>
       <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7690316/pexels-photo-7690316.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman using laptop and headset for an online session">
-        <figcaption data-t="gallery_5">Zoom sessions when Cuenca is not where you are.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545368/pexels-photo-7545368.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mature couple using a laptop at home">
+        <figcaption data-t="gallery_5">Zoom sessions for clients who travel, live abroad, or prefer home.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7690318/pexels-photo-7690318.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Smiling woman with headset using laptop at home">
-        <figcaption data-t="gallery_6">Virtual work can still feel personal and present.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5591274/pexels-photo-5591274.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mature woman smiling during a laptop video call">
+        <figcaption data-t="gallery_6">Online work can still feel personal, present, and well-held.</figcaption>
       </figure>
       <figure class="photo-card tall">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7495883/pexels-photo-7495883.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Woman greeting someone on a video call using a laptop">
-        <figcaption data-t="gallery_7">Accessible online care, in English or Spanish.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8439688/pexels-photo-8439688.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Couple using a laptop together in a refined home setting">
+        <figcaption data-t="gallery_7">A natural fit for expats and higher-trust private referrals.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/9065296/pexels-photo-9065296.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Client smiling during a counseling session">
-        <figcaption data-t="gallery_8">Relief often begins when the old story is seen.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5336907/pexels-photo-5336907.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Professional woman in a quiet consultation setting">
+        <figcaption data-t="gallery_8">For people used to discretion, competence, and directness.</figcaption>
       </figure>
       <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711023/pexels-photo-5711023.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Group therapy circle in a large sunlit room">
-        <figcaption data-t="gallery_9">Group workshops make the relational field visible.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8559994/pexels-photo-8559994.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Couple shaking hands after a consultation">
+        <figcaption data-t="gallery_9">A serious process can still feel practical and respectful.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711371/pexels-photo-5711371.jpeg?auto=compress&cs=tinysrgb&w=900" alt="People seated in a group therapy circle">
-        <figcaption data-t="gallery_10">Witnessing others can clarify what belongs to your system.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/27086983/pexels-photo-27086983.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant Latin American couple standing together outdoors">
+        <figcaption data-t="gallery_10">Established Latin American clients are part of the audience too.</figcaption>
       </figure>
       <figure class="photo-card wide">
         <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711030/pexels-photo-5711030.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Facilitator standing inside a group session circle">
         <figcaption data-t="gallery_11">Facilitation turns the group into a careful instrument.</figcaption>
       </figure>
       <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711017/pexels-photo-5711017.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Therapy circle viewed from above">
-        <figcaption data-t="gallery_12">The 3D app echoes this spatial logic: patterns become places.</figcaption>
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545359/pexels-photo-7545359.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Older man using a laptop at home">
+        <figcaption data-t="gallery_12">The 3D app supports spatial work before, during, or after sessions.</figcaption>
       </figure>
     </div>
   </section>
@@ -979,6 +1035,15 @@
         card_2_copy: "Repeated relationship loops, fear around success, exile from belonging, and generational trauma can appear as patterns in the system rather than personal defects.",
         card_3_title: "What can change",
         card_3_copy: "When hidden loyalties are seen with dignity, the body often stops defending an old story. The goal is not blame. The goal is a more truthful configuration.",
+        cv_kicker: "Belén’s background",
+        cv_title: "A facilitator with training, leadership, and real-world field experience.",
+        cv_copy: "Public profiles describe Belén as a transformational trainer, coach, and family constellator. Retreat materials also point to psychology and education studies, teaching experience, soft-skills training, and an international Family Constellations certification.",
+        cv_1_title: "Trainer and constellator",
+        cv_1_copy: "Retreat Guru and Galápagos retreat materials describe her work in coaching, transformation, emotional healing, and family constellations.",
+        cv_2_title: "Soft-skills foundation",
+        cv_2_copy: "Public retreat materials mention teaching experience and training in teamwork, problem-solving, creativity, leadership, and personal growth tools.",
+        cv_3_title: "Leadership under pressure",
+        cv_3_copy: "Universidad del Azuay and El Mercurio sources also show Belén in high-performance basketball leadership, including founding ATUC and coaching university teams.",
         method_kicker: "The method",
         method_title: "A session gives shape to what has been invisible.",
         method_copy: "Family configurations use space, position, attention, and carefully guided perception to study the relational system. The work is experiential, but the background is serious: systemic family theory, embodied awareness, and the growing study of generational trauma.",
@@ -1012,20 +1077,20 @@
         app_2: "Ancestral-pattern interaction",
         app_3: "Designed to support sessions",
         gallery_kicker: "Session imagery",
-        gallery_title: "A visual language for therapy, Zoom work, and group configurations.",
-        gallery_copy: "The page uses Pexels CDN imagery to make the service feel immediate: private conversation, couples work, virtual support, and group circles where family and ancestral patterns can be seen in space.",
-        gallery_1: "Private sessions: attentive listening, notes, and emotional safety.",
-        gallery_2: "One-to-one support for repeated family patterns.",
-        gallery_3: "Couples work for loyalty, belonging, conflict, and repair.",
-        gallery_4: "A grounded space for difficult material.",
-        gallery_5: "Zoom sessions when Cuenca is not where you are.",
-        gallery_6: "Virtual work can still feel personal and present.",
-        gallery_7: "Accessible online care, in English or Spanish.",
-        gallery_8: "Relief often begins when the old story is seen.",
-        gallery_9: "Group workshops make the relational field visible.",
-        gallery_10: "Witnessing others can clarify what belongs to your system.",
+        gallery_title: "A visual language for expats, established Latin American clients, Zoom work, and group configurations.",
+        gallery_copy: "The image mix now leans toward Belén’s real market: mature expats, established Latin American professionals and couples, polished private rooms, Zoom from home, and group work with social presence.",
+        gallery_1: "Private work for couples who want a serious, discreet setting.",
+        gallery_2: "Relationship sessions for loyalty, conflict, belonging, and repair.",
+        gallery_3: "Polished consultation rooms, not generic clinic stock.",
+        gallery_4: "Work for established couples and families with private material.",
+        gallery_5: "Zoom sessions for clients who travel, live abroad, or prefer home.",
+        gallery_6: "Online work can still feel personal, present, and well-held.",
+        gallery_7: "A natural fit for expats and higher-trust private referrals.",
+        gallery_8: "For people used to discretion, competence, and directness.",
+        gallery_9: "A serious process can still feel practical and respectful.",
+        gallery_10: "Established Latin American clients are part of the audience too.",
         gallery_11: "Facilitation turns the group into a careful instrument.",
-        gallery_12: "The 3D app echoes this spatial logic: patterns become places.",
+        gallery_12: "The 3D app supports spatial work before, during, or after sessions.",
         lens_kicker: "The deeper question",
         quote: "What if the pattern is not your personality, <span class=\"script-word\">but a family configuration asking to be seen?</span>",
         quote_copy: "Generational trauma can travel as silence, loyalty, repetition, or a nervous system that learned the past before it could choose the present. This work does not promise magic. It offers a disciplined encounter with what has been carried.",
@@ -1063,6 +1128,15 @@
         card_2_copy: "Bucles de relación, miedo al éxito, exilio de la pertenencia y trauma generacional pueden aparecer como patrones del sistema, no como defectos personales.",
         card_3_title: "Qué puede cambiar",
         card_3_copy: "Cuando las lealtades ocultas se miran con dignidad, el cuerpo puede dejar de defender una historia antigua. El objetivo no es culpar. El objetivo es una configuración más verdadera.",
+        cv_kicker: "Trayectoria de Belén",
+        cv_title: "Una facilitadora con formación, liderazgo y experiencia de campo.",
+        cv_copy: "Perfiles públicos describen a Belén como entrenadora transformacional, coach y consteladora familiar. Materiales de retiros también mencionan estudios en psicología y educación, experiencia docente, entrenamiento en habilidades blandas y certificación internacional en Constelaciones Familiares.",
+        cv_1_title: "Coach y consteladora",
+        cv_1_copy: "Retreat Guru y materiales de retiros en Galápagos describen su trabajo en coaching, transformación, sanación emocional y constelaciones familiares.",
+        cv_2_title: "Base en habilidades blandas",
+        cv_2_copy: "Materiales públicos mencionan experiencia docente y entrenamiento en trabajo en equipo, resolución de problemas, creatividad, liderazgo y herramientas de crecimiento personal.",
+        cv_3_title: "Liderazgo bajo presión",
+        cv_3_copy: "Fuentes de la Universidad del Azuay y El Mercurio también muestran a Belén en liderazgo deportivo de alto rendimiento, incluyendo fundar ATUC y entrenar equipos universitarios.",
         method_kicker: "El método",
         method_title: "Una sesión le da forma a lo que estaba invisible.",
         method_copy: "Las configuraciones familiares usan espacio, posición, atención y percepción guiada para estudiar el sistema relacional. El trabajo es experiencial, pero su trasfondo es serio: teoría familiar sistémica, conciencia corporal y el estudio creciente del trauma generacional.",
@@ -1096,20 +1170,20 @@
         app_2: "Interacción con patrones ancestrales",
         app_3: "Diseñada para apoyar sesiones",
         gallery_kicker: "Imágenes de sesión",
-        gallery_title: "Un lenguaje visual para terapia, Zoom y configuraciones grupales.",
-        gallery_copy: "La página usa imágenes desde el CDN de Pexels para que el servicio se sienta inmediato: conversación privada, trabajo de pareja, apoyo virtual y círculos grupales donde los patrones familiares y ancestrales pueden verse en el espacio.",
-        gallery_1: "Sesiones privadas: escucha atenta, notas y seguridad emocional.",
-        gallery_2: "Apoyo uno a uno para patrones familiares repetidos.",
-        gallery_3: "Trabajo de pareja para lealtad, pertenencia, conflicto y reparación.",
-        gallery_4: "Un espacio aterrizado para material difícil.",
-        gallery_5: "Sesiones por Zoom cuando Cuenca no es donde estás.",
-        gallery_6: "El trabajo virtual también puede sentirse personal y presente.",
-        gallery_7: "Cuidado online accesible, en inglés o español.",
-        gallery_8: "El alivio suele empezar cuando la historia antigua se ve.",
-        gallery_9: "Los talleres grupales vuelven visible el campo relacional.",
-        gallery_10: "Ser testigo de otros puede aclarar lo que pertenece a tu sistema.",
+        gallery_title: "Un lenguaje visual para expats, clientes latinoamericanos establecidos, Zoom y configuraciones grupales.",
+        gallery_copy: "La mezcla visual ahora apunta mejor al mercado real de Belén: expats maduros, profesionales y parejas latinoamericanas establecidas, espacios privados cuidados, Zoom desde casa y trabajo grupal con presencia social.",
+        gallery_1: "Trabajo privado para parejas que buscan un espacio serio y discreto.",
+        gallery_2: "Sesiones de pareja para lealtad, conflicto, pertenencia y reparación.",
+        gallery_3: "Consultorios cuidados, no fotografía genérica de clínica.",
+        gallery_4: "Trabajo para parejas y familias establecidas con material privado.",
+        gallery_5: "Sesiones por Zoom para clientes que viajan, viven fuera o prefieren casa.",
+        gallery_6: "El trabajo online también puede sentirse personal, presente y bien sostenido.",
+        gallery_7: "Un encaje natural para expats y referidos privados de alta confianza.",
+        gallery_8: "Para personas acostumbradas a discreción, competencia y claridad.",
+        gallery_9: "Un proceso serio también puede sentirse práctico y respetuoso.",
+        gallery_10: "Los clientes latinoamericanos establecidos también son parte de la audiencia.",
         gallery_11: "La facilitación convierte al grupo en un instrumento cuidadoso.",
-        gallery_12: "La app 3D refleja esta lógica espacial: los patrones se vuelven lugares.",
+        gallery_12: "La app 3D apoya el trabajo espacial antes, durante o después de las sesiones.",
         lens_kicker: "La pregunta de fondo",
         quote: "¿Y si el patrón no es tu personalidad, <span class=\"script-word\">sino una configuración familiar pidiendo ser vista?</span>",
         quote_copy: "El trauma generacional puede viajar como silencio, lealtad, repetición o un sistema nervioso que aprendió el pasado antes de elegir el presente. Este trabajo no promete magia. Ofrece un encuentro disciplinado con lo que se ha cargado.",
