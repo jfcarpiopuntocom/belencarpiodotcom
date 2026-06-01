@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://belencarpio.com/sitemap.xml
