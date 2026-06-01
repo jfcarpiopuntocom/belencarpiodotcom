@@ -454,34 +454,6 @@
       line-height: 1.35;
     }
 
-    .cv-list {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-
-    .source-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .source-links a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 38px;
-      padding: 9px 12px;
-      border-radius: 999px;
-      color: #ffffff;
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.38);
-      font-weight: 850;
-      text-decoration: none;
-      font-size: 13px;
-    }
-
     .card {
       border-radius: 8px;
       padding: 24px;
@@ -697,7 +669,7 @@
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
-      .grid, .proof-row, .cv-list { grid-template-columns: 1fr; }
+      .grid, .proof-row { grid-template-columns: 1fr; }
       .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
       .brand span { display: none; }
@@ -801,34 +773,6 @@
         <h3 data-t="card_3_title">What can change</h3>
         <p data-t="card_3_copy">When hidden loyalties are seen with dignity, the body often stops defending an old story. The goal is not blame. The goal is a more truthful configuration.</p>
       </article>
-    </div>
-  </section>
-
-  <section class="deep" id="background">
-    <div class="section-head">
-      <span class="kicker" data-t="cv_kicker">Belén’s background</span>
-      <h2 data-t="cv_title">A facilitator with training, leadership, and real-world field experience.</h2>
-      <p data-t="cv_copy">Public profiles describe Belén as a transformational trainer, coach, and family constellator. Retreat materials also point to psychology and education studies, teaching experience, soft-skills training, and an international Family Constellations certification.</p>
-    </div>
-    <div class="cv-list">
-      <article class="card">
-        <h3 data-t="cv_1_title">Trainer and constellator</h3>
-        <p data-t="cv_1_copy">Retreat Guru and Galápagos retreat materials describe her work in coaching, transformation, emotional healing, and family constellations.</p>
-      </article>
-      <article class="card">
-        <h3 data-t="cv_2_title">Soft-skills foundation</h3>
-        <p data-t="cv_2_copy">Public retreat materials mention teaching experience and training in teamwork, problem-solving, creativity, leadership, and personal growth tools.</p>
-      </article>
-      <article class="card">
-        <h3 data-t="cv_3_title">Leadership under pressure</h3>
-        <p data-t="cv_3_copy">Universidad del Azuay and El Mercurio sources also show Belén in high-performance basketball leadership, including founding ATUC and coaching university teams.</p>
-      </article>
-    </div>
-    <div class="source-links" aria-label="Public source links">
-      <a href="https://retreat.guru/teachers/6655-17/belen-carpio" rel="noopener" target="_blank">Retreat Guru</a>
-      <a href="https://www.livinghealthierideas.com/emotions-galapagos-2025/" rel="noopener" target="_blank">Galápagos retreat profile</a>
-      <a href="https://www.uazuay.edu.ec/prensa/la-pandemia-hizo-que-belen-carpio-funde-su-propio-club-de-baloncesto" rel="noopener" target="_blank">UDA / El Mercurio</a>
-      <a href="https://dspace.uazuay.edu.ec/bitstream/datos/11086/1/16624.pdf" rel="noopener" target="_blank">UDA architecture thesis</a>
     </div>
   </section>
 
@@ -1035,15 +979,6 @@
         card_2_copy: "Repeated relationship loops, fear around success, exile from belonging, and generational trauma can appear as patterns in the system rather than personal defects.",
         card_3_title: "What can change",
         card_3_copy: "When hidden loyalties are seen with dignity, the body often stops defending an old story. The goal is not blame. The goal is a more truthful configuration.",
-        cv_kicker: "Belén’s background",
-        cv_title: "A facilitator with training, leadership, and real-world field experience.",
-        cv_copy: "Public profiles describe Belén as a transformational trainer, coach, and family constellator. Retreat materials also point to psychology and education studies, teaching experience, soft-skills training, and an international Family Constellations certification.",
-        cv_1_title: "Trainer and constellator",
-        cv_1_copy: "Retreat Guru and Galápagos retreat materials describe her work in coaching, transformation, emotional healing, and family constellations.",
-        cv_2_title: "Soft-skills foundation",
-        cv_2_copy: "Public retreat materials mention teaching experience and training in teamwork, problem-solving, creativity, leadership, and personal growth tools.",
-        cv_3_title: "Leadership under pressure",
-        cv_3_copy: "Universidad del Azuay and El Mercurio sources also show Belén in high-performance basketball leadership, including founding ATUC and coaching university teams.",
         method_kicker: "The method",
         method_title: "A session gives shape to what has been invisible.",
         method_copy: "Family configurations use space, position, attention, and carefully guided perception to study the relational system. The work is experiential, but the background is serious: systemic family theory, embodied awareness, and the growing study of generational trauma.",
@@ -1128,15 +1063,6 @@
         card_2_copy: "Bucles de relación, miedo al éxito, exilio de la pertenencia y trauma generacional pueden aparecer como patrones del sistema, no como defectos personales.",
         card_3_title: "Qué puede cambiar",
         card_3_copy: "Cuando las lealtades ocultas se miran con dignidad, el cuerpo puede dejar de defender una historia antigua. El objetivo no es culpar. El objetivo es una configuración más verdadera.",
-        cv_kicker: "Trayectoria de Belén",
-        cv_title: "Una facilitadora con formación, liderazgo y experiencia de campo.",
-        cv_copy: "Perfiles públicos describen a Belén como entrenadora transformacional, coach y consteladora familiar. Materiales de retiros también mencionan estudios en psicología y educación, experiencia docente, entrenamiento en habilidades blandas y certificación internacional en Constelaciones Familiares.",
-        cv_1_title: "Coach y consteladora",
-        cv_1_copy: "Retreat Guru y materiales de retiros en Galápagos describen su trabajo en coaching, transformación, sanación emocional y constelaciones familiares.",
-        cv_2_title: "Base en habilidades blandas",
-        cv_2_copy: "Materiales públicos mencionan experiencia docente y entrenamiento en trabajo en equipo, resolución de problemas, creatividad, liderazgo y herramientas de crecimiento personal.",
-        cv_3_title: "Liderazgo bajo presión",
-        cv_3_copy: "Fuentes de la Universidad del Azuay y El Mercurio también muestran a Belén en liderazgo deportivo de alto rendimiento, incluyendo fundar ATUC y entrenar equipos universitarios.",
         method_kicker: "El método",
         method_title: "Una sesión le da forma a lo que estaba invisible.",
         method_copy: "Las configuraciones familiares usan espacio, posición, atención y percepción guiada para estudiar el sistema relacional. El trabajo es experiencial, pero su trasfondo es serio: teoría familiar sistémica, conciencia corporal y el estudio creciente del trauma generacional.",
