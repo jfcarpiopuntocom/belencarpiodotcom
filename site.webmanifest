@@ -1,17 +1,22 @@
 {
-  "name": "Belén Carpio",
+  "id": "belen-carpio-family-configurations",
+  "name": "Belén Carpio · Family Configurations",
   "short_name": "Belén Carpio",
-  "description": "Family Configurations in Cuenca and online over Zoom.",
-  "start_url": "/",
-  "scope": "/",
+  "description": "Family Configurations in Cuenca and online over Zoom for generational trauma, ancestral patterns, and systemic family work.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
   "display": "browser",
   "background_color": "#23142f",
   "theme_color": "#23142f",
+  "categories": ["health", "wellness", "education"],
   "icons": [
     {
-      "src": "/assets/og-belen-carpio.jpg",
-      "sizes": "1200x630",
-      "type": "image/jpeg"
+      "src": "assets/belen-carpio-logo.jpeg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg",
+      "purpose": "any"
     }
   ]
 }

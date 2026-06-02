@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#23142f">
+  <link rel="canonical" href="https://belencarpio.com/">
+  <title>Belén Carpio · Redirecting</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      color: #ffffff;
+      background: #23142f;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      text-align: center;
+      padding: 24px;
+    }
+    a {
+      color: #f5c66f;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Belén Carpio</h1>
+    <p>Redirecting to the main bilingual page.</p>
+    <p><a id="homeLink" href="/">Open the site</a></p>
+  </main>
+  <script>
+    const base = location.hostname.endsWith("github.io") ? "/belencarpiodotcom/" : "/";
+    document.getElementById("homeLink").setAttribute("href", base);
+    location.replace(base);
+  </script>
+</body>
+</html>

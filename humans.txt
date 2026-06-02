@@ -4,4 +4,10 @@ Language: English, Spanish
 Location: Cuenca, Ecuador and online via Zoom
 Contact: belencarpio@gmail.com
 
-Built as a static HTML5 site for high readability, WhatsApp-first contact, bilingual access, and search discovery.
+Built as a single-page static HTML5 site for high readability, WhatsApp-first contact, bilingual access through the in-page language switch, and search discovery.
+
+Resources:
+- Sitemap: https://belencarpio.com/sitemap.xml
+- Robots: https://belencarpio.com/robots.txt
+- LLM notes: https://belencarpio.com/llms.txt
+- Session preparation sheet: https://belencarpio.com/assets/session-preparation-a4.html
