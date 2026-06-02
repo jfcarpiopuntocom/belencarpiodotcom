@@ -1,0 +1,7 @@
+Site: Belén Carpio
+URL: https://belencarpio.com/
+Language: English, Spanish
+Location: Cuenca, Ecuador and online via Zoom
+Contact: belencarpio@gmail.com
+
+Built as a static HTML5 site for high readability, WhatsApp-first contact, bilingual access, and search discovery.
