@@ -82,7 +82,8 @@
           "Generational trauma sessions",
           "Ancestral pattern work",
           "Zoom sessions",
-          "Group workshops"
+          "Group workshops",
+          "Business and organizational configurations"
         ],
         "knowsAbout": [
           "generational trauma",
@@ -112,7 +113,7 @@
             "name": "Pay for a Family Configurations session"
           }
         ],
-        "paymentAccepted": ["PayPal"],
+        "paymentAccepted": ["PayPal", "Zelle", "Venmo", "Credit Card", "Bank Transfer"],
         "offers": {
           "@type": "Offer",
           "name": "Ancestral Pattern Integration Pack",
@@ -164,6 +165,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Belén's 3D experience app supports spatial work by helping clients interact with ancestral patterns as configurations before, during or after sessions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the contribution for a Family Configurations session?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The regional contribution is USD 100 for clients in the United States and USD 50 for Latin America. The premium Ancestral Pattern Integration Pack is USD 300."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should I prepare for a Family Configurations session?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose one theme, arrive with enough time, and stay open to feeling rather than over-explaining. After the session, let the experience settle before analyzing or sharing it widely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Family Configurations be used for business or projects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Business and organizational configurations can explore roles, teams, projects, money flow, leadership dynamics, and hidden tensions in a professional system."
             }
           }
         ]
@@ -702,6 +727,62 @@
       font-weight: 650;
     }
 
+    .value-mini {
+      margin: 14px 0 0;
+      padding: 12px;
+      border-radius: 8px;
+      color: inherit;
+      background: rgba(245,198,111,.18);
+      border: 1px solid rgba(245,198,111,.55);
+      font-weight: 900;
+    }
+
+    .featured .value-mini {
+      background: #fff3d6;
+      border-color: #d9a94f;
+    }
+
+    .prep-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .prep-card {
+      border-radius: 8px;
+      padding: 24px;
+      border: 1px solid rgba(27,16,38,.22);
+      background: #ffffff;
+      color: var(--ink);
+      box-shadow: 0 14px 34px rgba(35,20,47,.1);
+    }
+
+    .prep-card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .prep-card p, .prep-card li {
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 620;
+    }
+
+    .prep-card ul {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+
+    .payment-note {
+      margin: 14px 0 0;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 780;
+      line-height: 1.45;
+    }
+
     .split {
       display: grid;
       grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
@@ -922,7 +1003,7 @@
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
-      .grid, .proof-row, .value-ladder { grid-template-columns: 1fr; }
+      .grid, .proof-row, .value-ladder, .prep-grid { grid-template-columns: 1fr; }
       .faq-list { grid-template-columns: 1fr; }
       .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
@@ -1108,6 +1189,15 @@
           <li data-t="app_3">Designed to support sessions</li>
         </ul>
       </article>
+      <article class="card">
+        <h3 data-t="business_title">Business and organizational configurations</h3>
+        <p data-t="business_copy">Systemic work can also look at organizations, projects, leadership roles, money flow, and professional dynamics through the same spatial intelligence used in family systems.</p>
+        <ul>
+          <li data-t="business_1">Useful for projects and teams</li>
+          <li data-t="business_2">Clarifies roles and hidden dynamics</li>
+          <li data-t="business_3">Available by private consultation</li>
+        </ul>
+      </article>
     </div>
   </section>
 
@@ -1177,7 +1267,7 @@
       </div>
       <div>
         <p data-t="quote_copy">Generational trauma can travel as silence, loyalty, repetition, or a nervous system that learned the past before it could choose the present. This work does not promise magic. It offers a disciplined encounter with what has been carried.</p>
-        <a class="btn btn-secondary" href="assets/family-configurations-generational-trauma.pdf" data-t="pdf_cta">Read the background PDF</a>
+        <a class="btn btn-secondary" href="assets/session-preparation-a4.html" target="_blank" rel="noopener" data-t="prep_cta">Open the session prep sheet</a>
       </div>
     </div>
   </section>
@@ -1213,6 +1303,49 @@
         <summary data-t="faq_6_q">Is this therapy?</summary>
         <p data-t="faq_6_a">Family Configurations are a facilitated systemic process. If you are in clinical crisis or need medical or psychiatric care, this work should not replace licensed healthcare support.</p>
       </details>
+      <details class="faq-item">
+        <summary data-t="faq_7_q">What is the contribution for a session?</summary>
+        <p data-t="faq_7_a">The regional contribution is USD 100 for clients in the United States and USD 50 for Latin America. The premium integration pack is USD 300.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-t="faq_8_q">How should I prepare?</summary>
+        <p data-t="faq_8_a">Choose one theme, arrive with enough time, and stay open to feeling rather than over-explaining. After the session, let the experience settle before analyzing or sharing it widely.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-t="faq_9_q">Can this be used for business or projects?</summary>
+        <p data-t="faq_9_a">Yes. Business and organizational configurations can explore roles, teams, projects, money flow, leadership dynamics, and hidden tensions in a professional system.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="light" id="preparation">
+    <div class="section-head">
+      <span class="kicker" data-t="prep_kicker">Before and after</span>
+      <h2 data-t="prep_title">Come with one theme, enough time, and space to integrate.</h2>
+      <p data-t="prep_copy">Belén’s preparation is intentionally simple. You do not need to over-explain the whole family story. Choose one theme per configuration and arrive open to observe, feel, and let the system show what matters.</p>
+    </div>
+    <div class="prep-grid">
+      <article class="prep-card">
+        <h3 data-t="prep_before_title">Before the session</h3>
+        <ul>
+          <li data-t="prep_before_1">Notice what you want to work on; one theme is enough.</li>
+          <li data-t="prep_before_2">Book your time, complete payment, and arrive without rushing.</li>
+          <li data-t="prep_before_3">If you work on Zoom, choose a private place and keep water nearby.</li>
+        </ul>
+      </article>
+      <article class="prep-card">
+        <h3 data-t="prep_after_title">After the session</h3>
+        <ul>
+          <li data-t="prep_after_1">Let the experience process without analyzing it immediately.</li>
+          <li data-t="prep_after_2">For a few days, avoid explaining it to everyone; let it settle first.</li>
+          <li data-t="prep_after_3">Drink water, rest, and notice what continues releasing.</li>
+        </ul>
+      </article>
+      <article class="prep-card">
+        <h3 data-t="prep_support_title">Support a group configuration</h3>
+        <p data-t="prep_support_copy">You may be invited to support a group configuration at no cost. Witnessing and representing can be a generous way to understand the method before choosing your own work.</p>
+        <a class="btn btn-secondary" href="#" onclick="openWA(); return false;" data-t="prep_support_cta">Ask about supporting a group</a>
+      </article>
     </div>
   </section>
 
@@ -1227,6 +1360,7 @@
         <span class="value-step">01</span>
         <h3 data-t="value_entry_title">Single private session</h3>
         <p data-t="value_entry_copy">A clear entry point for one theme: relationship loops, money blocks, belonging, grief, migration, family roles, or generational trauma.</p>
+        <p class="value-mini" data-t="value_entry_price">Regional contribution: USA USD 100 · Latin America USD 50.</p>
         <ul>
           <li data-t="value_entry_1">In person or over Zoom</li>
           <li data-t="value_entry_2">English or Spanish</li>
@@ -1243,6 +1377,7 @@
           <li data-t="value_premium_2">One private Family Configuration session</li>
           <li data-t="value_premium_3">3D ancestral-pattern map</li>
           <li data-t="value_premium_4">Integration prompts and follow-up notes</li>
+          <li data-t="value_premium_5">Therapeutic tarot reading included as a gift</li>
         </ul>
         <div class="value-actions">
           <a class="btn btn-primary" href="https://calendly.com/belencarpio/session" target="_blank" rel="noopener" data-t="value_schedule">Schedule the premium pack</a>
@@ -1279,6 +1414,7 @@
           <button class="btn btn-secondary" type="button" onclick="openWA()" data-t="send_wa">Open WhatsApp</button>
         </div>
         <p class="contact-direct"><span data-t="direct_contact">Direct contact:</span> <a href="tel:+15616018028">+1 (561) 601-8028</a> · <a href="mailto:belencarpio@gmail.com">belencarpio@gmail.com</a></p>
+        <p class="payment-note" data-t="payment_methods">Payment methods: PayPal, Zelle, Venmo, credit card, and Ecuador bank transfer. Confirm details with Belén on WhatsApp before sending a transfer.</p>
       </div>
     </div>
   </section>
@@ -1350,6 +1486,11 @@
         app_1: "Visual, embodied mapping",
         app_2: "Ancestral-pattern interaction",
         app_3: "Designed to support sessions",
+        business_title: "Business and organizational configurations",
+        business_copy: "Systemic work can also look at organizations, projects, leadership roles, money flow, and professional dynamics through the same spatial intelligence used in family systems.",
+        business_1: "Useful for projects and teams",
+        business_2: "Clarifies roles and hidden dynamics",
+        business_3: "Available by private consultation",
         gallery_kicker: "Private, Zoom and group work",
         gallery_title: "Sessions for the patterns that keep repeating.",
         gallery_copy: "Work with Belén in Cuenca, over Zoom, in couples sessions, or in guided group configurations. The setting changes; the focus stays the same: seeing inherited patterns clearly enough to stop living from them automatically.",
@@ -1368,7 +1509,7 @@
         lens_kicker: "The deeper question",
         quote: "What if the pattern is not your personality, <span class=\"script-word\">but a family configuration asking to be seen?</span>",
         quote_copy: "Generational trauma can travel as silence, loyalty, repetition, or a nervous system that learned the past before it could choose the present. This work does not promise magic. It offers a disciplined encounter with what has been carried.",
-        pdf_cta: "Read the background PDF",
+        prep_cta: "Open the session prep sheet",
         faq_kicker: "Questions people ask",
         faq_title: "Family Configurations in Cuenca, over Zoom, and in group workshops.",
         faq_copy: "These answers help you decide whether this work fits the pattern you are trying to understand.",
@@ -1384,11 +1525,32 @@
         faq_5_a: "Belén’s 3D experience app supports spatial work by helping clients interact with ancestral patterns as configurations before, during or after sessions.",
         faq_6_q: "Is this therapy?",
         faq_6_a: "Family Configurations are a facilitated systemic process. If you are in clinical crisis or need medical or psychiatric care, this work should not replace licensed healthcare support.",
+        faq_7_q: "What is the contribution for a session?",
+        faq_7_a: "The regional contribution is USD 100 for clients in the United States and USD 50 for Latin America. The premium integration pack is USD 300.",
+        faq_8_q: "How should I prepare?",
+        faq_8_a: "Choose one theme, arrive with enough time, and stay open to feeling rather than over-explaining. After the session, let the experience settle before analyzing or sharing it widely.",
+        faq_9_q: "Can this be used for business or projects?",
+        faq_9_a: "Yes. Business and organizational configurations can explore roles, teams, projects, money flow, leadership dynamics, and hidden tensions in a professional system.",
+        prep_kicker: "Before and after",
+        prep_title: "Come with one theme, enough time, and space to integrate.",
+        prep_copy: "Belén’s preparation is intentionally simple. You do not need to over-explain the whole family story. Choose one theme per configuration and arrive open to observe, feel, and let the system show what matters.",
+        prep_before_title: "Before the session",
+        prep_before_1: "Notice what you want to work on; one theme is enough.",
+        prep_before_2: "Book your time, complete payment, and arrive without rushing.",
+        prep_before_3: "If you work on Zoom, choose a private place and keep water nearby.",
+        prep_after_title: "After the session",
+        prep_after_1: "Let the experience process without analyzing it immediately.",
+        prep_after_2: "For a few days, avoid explaining it to everyone; let it settle first.",
+        prep_after_3: "Drink water, rest, and notice what continues releasing.",
+        prep_support_title: "Support a group configuration",
+        prep_support_copy: "You may be invited to support a group configuration at no cost. Witnessing and representing can be a generous way to understand the method before choosing your own work.",
+        prep_support_cta: "Ask about supporting a group",
         value_kicker: "Value ladder",
         value_title: "Choose the level of support that matches the pattern.",
         value_copy: "Start with one focused session, or use the premium integration pack when the pattern is important enough to prepare, map, and integrate with more structure.",
         value_entry_title: "Single private session",
         value_entry_copy: "A clear entry point for one theme: relationship loops, money blocks, belonging, grief, migration, family roles, or generational trauma.",
+        value_entry_price: "Regional contribution: USA USD 100 · Latin America USD 50.",
         value_entry_1: "In person or over Zoom",
         value_entry_2: "English or Spanish",
         value_entry_3: "Best when you want to start gently",
@@ -1399,6 +1561,7 @@
         value_premium_2: "One private Family Configuration session",
         value_premium_3: "3D ancestral-pattern map",
         value_premium_4: "Integration prompts and follow-up notes",
+        value_premium_5: "Therapeutic tarot reading included as a gift",
         value_schedule: "Schedule the premium pack",
         value_prep: "Open the A4 prep sheet",
         value_group_title: "Couples, family, or group work",
@@ -1416,6 +1579,7 @@
         pay_btn: "Pay with PayPal",
         send_wa: "Open WhatsApp",
         direct_contact: "Direct contact:",
+        payment_methods: "Payment methods: PayPal, Zelle, Venmo, credit card, and Ecuador bank transfer. Confirm details with Belén on WhatsApp before sending a transfer.",
         footer: "Belén Carpio · Family Configurations · Cuenca, Ecuador · English / Spanish",
         floating_wa: "WhatsApp Belén"
       },
@@ -1474,6 +1638,11 @@
         app_1: "Mapa visual y corporal",
         app_2: "Interacción con patrones ancestrales",
         app_3: "Diseñada para apoyar sesiones",
+        business_title: "Configuraciones empresariales y organizacionales",
+        business_copy: "El trabajo sistémico también puede mirar organizaciones, proyectos, roles de liderazgo, flujo de dinero y dinámicas profesionales con la misma inteligencia espacial usada en sistemas familiares.",
+        business_1: "Útil para proyectos y equipos",
+        business_2: "Aclara roles y dinámicas ocultas",
+        business_3: "Disponible por consulta privada",
         gallery_kicker: "Trabajo privado, por Zoom y grupal",
         gallery_title: "Sesiones para los patrones que se siguen repitiendo.",
         gallery_copy: "Trabaja con Belén en Cuenca, por Zoom, en sesiones de pareja o en configuraciones grupales guiadas. El formato cambia; el foco se mantiene: ver los patrones heredados con suficiente claridad para dejar de vivirlos en automático.",
@@ -1492,7 +1661,7 @@
         lens_kicker: "La pregunta de fondo",
         quote: "¿Y si el patrón no es tu personalidad, <span class=\"script-word\">sino una configuración familiar pidiendo ser vista?</span>",
         quote_copy: "El trauma generacional puede viajar como silencio, lealtad, repetición o un sistema nervioso que aprendió el pasado antes de elegir el presente. Este trabajo no promete magia. Ofrece un encuentro disciplinado con lo que se ha cargado.",
-        pdf_cta: "Leer el PDF base",
+        prep_cta: "Abrir la hoja de preparación",
         faq_kicker: "Preguntas frecuentes",
         faq_title: "Configuraciones Familiares en Cuenca, por Zoom y en talleres grupales.",
         faq_copy: "Estas respuestas ayudan a decidir si este trabajo encaja con el patrón que quieres comprender.",
@@ -1508,11 +1677,32 @@
         faq_5_a: "La app de experiencia 3D de Belén apoya el trabajo espacial al ayudar a interactuar con patrones ancestrales como configuraciones antes, durante o después de las sesiones.",
         faq_6_q: "¿Esto es terapia?",
         faq_6_a: "Las Configuraciones Familiares son un proceso sistémico facilitado. Si estás en crisis clínica o necesitas atención médica o psiquiátrica, este trabajo no debe reemplazar el apoyo de profesionales de salud licenciados.",
+        faq_7_q: "¿Cuál es la contribución por sesión?",
+        faq_7_a: "La contribución regional es USD 100 para clientes en Estados Unidos y USD 50 para Latinoamérica. El paquete premium de integración cuesta USD 300.",
+        faq_8_q: "¿Cómo debo prepararme?",
+        faq_8_a: "Elige un tema, llega con tiempo suficiente y mantente abierto a sentir en lugar de sobreexplicar. Después de la sesión, permite que la experiencia asiente antes de analizarla o compartirla ampliamente.",
+        faq_9_q: "¿Se puede usar para negocios o proyectos?",
+        faq_9_a: "Sí. Las configuraciones empresariales y organizacionales pueden explorar roles, equipos, proyectos, flujo de dinero, liderazgo y tensiones ocultas en un sistema profesional.",
+        prep_kicker: "Antes y después",
+        prep_title: "Ven con un tema, tiempo suficiente y espacio para integrar.",
+        prep_copy: "La preparación de Belén es intencionalmente simple. No necesitas explicar toda la historia familiar. Elige un tema por configuración y llega con apertura para observar, sentir y dejar que el sistema muestre lo importante.",
+        prep_before_title: "Antes de la sesión",
+        prep_before_1: "Observa qué quieres trabajar; un tema es suficiente.",
+        prep_before_2: "Agenda tu horario, completa el pago y llega sin correr.",
+        prep_before_3: "Si trabajas por Zoom, elige un lugar privado y ten agua cerca.",
+        prep_after_title: "Después de la sesión",
+        prep_after_1: "Permite procesar lo vivido sin analizarlo inmediatamente.",
+        prep_after_2: "Durante unos días, evita explicarlo a todo el mundo; deja que asiente primero.",
+        prep_after_3: "Toma agua, descansa y observa lo que sigue soltándose.",
+        prep_support_title: "Apoyar una configuración grupal",
+        prep_support_copy: "Puedes venir a apoyar una configuración grupal sin costo. Observar y representar puede ser una forma generosa de comprender el método antes de elegir tu propio trabajo.",
+        prep_support_cta: "Preguntar por apoyo grupal",
         value_kicker: "Escalera de valor",
         value_title: "Elige el nivel de apoyo que corresponde al patrón.",
         value_copy: "Empieza con una sesión enfocada, o usa el paquete premium de integración cuando el patrón merece preparación, mapa e integración con más estructura.",
         value_entry_title: "Sesión privada individual",
         value_entry_copy: "Una entrada clara para un tema: bucles de relación, bloqueos con dinero, pertenencia, duelo, migración, roles familiares o trauma generacional.",
+        value_entry_price: "Contribución regional: Estados Unidos USD 100 · Latinoamérica USD 50.",
         value_entry_1: "Presencial o por Zoom",
         value_entry_2: "Inglés o español",
         value_entry_3: "Ideal cuando quieres empezar con calma",
@@ -1523,6 +1713,7 @@
         value_premium_2: "Una sesión privada de Configuración Familiar",
         value_premium_3: "Mapa 3D del patrón ancestral",
         value_premium_4: "Prompts de integración y notas de seguimiento",
+        value_premium_5: "Lectura de tarot terapéutico incluida como regalo",
         value_schedule: "Agendar el paquete premium",
         value_prep: "Abrir la hoja A4 de preparación",
         value_group_title: "Trabajo de pareja, familia o grupo",
@@ -1540,6 +1731,7 @@
         pay_btn: "Pagar con PayPal",
         send_wa: "Abrir WhatsApp",
         direct_contact: "Contacto directo:",
+        payment_methods: "Métodos de pago: PayPal, Zelle, Venmo, tarjeta de crédito y transferencia bancaria en Ecuador. Confirma los datos con Belén por WhatsApp antes de enviar una transferencia.",
         footer: "Belén Carpio · Configuraciones Familiares · Cuenca, Ecuador · Inglés / Español",
         floating_wa: "WhatsApp Belén"
       }
