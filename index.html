@@ -112,7 +112,15 @@
             "name": "Pay for a Family Configurations session"
           }
         ],
-        "paymentAccepted": ["PayPal"]
+        "paymentAccepted": ["PayPal"],
+        "offers": {
+          "@type": "Offer",
+          "name": "Ancestral Pattern Integration Pack",
+          "price": "300",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://belencarpio.com/#value"
+        }
       },
       {
         "@type": "FAQPage",
@@ -386,7 +394,7 @@
     }
 
     .btn {
-      display: none;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 54px;
@@ -618,6 +626,82 @@
       padding-left: 20px;
     }
 
+    .value-ladder {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .value-card {
+      position: relative;
+      border-radius: 8px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,.34);
+      background: rgba(255,255,255,.08);
+      color: #ffffff;
+    }
+
+    .value-card.featured {
+      background: #ffffff;
+      color: var(--ink);
+      border-color: var(--gold);
+      box-shadow: var(--shadow);
+    }
+
+    .value-step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      min-height: 42px;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--gold);
+      font-weight: 950;
+      margin-bottom: 16px;
+    }
+
+    .value-price {
+      margin: 12px 0;
+      color: inherit;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .value-price span {
+      font-size: 16px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .value-card p, .value-card li {
+      color: inherit;
+      font-weight: 620;
+    }
+
+    .value-card ul {
+      margin: 16px 0 0;
+      padding-left: 20px;
+    }
+
+    .value-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .value-note {
+      margin: 22px 0 0;
+      padding: 18px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.34);
+      font-weight: 650;
+    }
+
     .split {
       display: grid;
       grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
@@ -838,7 +922,7 @@
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
-      .grid, .proof-row { grid-template-columns: 1fr; }
+      .grid, .proof-row, .value-ladder { grid-template-columns: 1fr; }
       .faq-list { grid-template-columns: 1fr; }
       .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
@@ -1132,6 +1216,53 @@
     </div>
   </section>
 
+  <section class="deep" id="value">
+    <div class="section-head">
+      <span class="kicker" data-t="value_kicker">Value ladder</span>
+      <h2 data-t="value_title">Choose the level of support that matches the pattern.</h2>
+      <p data-t="value_copy">Start with one focused session, or use the premium integration pack when the pattern is important enough to prepare, map, and integrate with more structure.</p>
+    </div>
+    <div class="value-ladder" aria-label="Family Configurations value ladder">
+      <article class="value-card">
+        <span class="value-step">01</span>
+        <h3 data-t="value_entry_title">Single private session</h3>
+        <p data-t="value_entry_copy">A clear entry point for one theme: relationship loops, money blocks, belonging, grief, migration, family roles, or generational trauma.</p>
+        <ul>
+          <li data-t="value_entry_1">In person or over Zoom</li>
+          <li data-t="value_entry_2">English or Spanish</li>
+          <li data-t="value_entry_3">Best when you want to start gently</li>
+        </ul>
+      </article>
+      <article class="value-card featured">
+        <span class="value-step">02</span>
+        <h3 data-t="value_premium_title">Ancestral Pattern Integration Pack</h3>
+        <p class="value-price"><span data-t="value_currency">USD</span> 300</p>
+        <p data-t="value_premium_copy">The premium anchor: a prepared private process with the session, the 3D ancestral-pattern app, and a focused integration kit so the insight has somewhere to land.</p>
+        <ul>
+          <li data-t="value_premium_1">A4 session-preparation sheet</li>
+          <li data-t="value_premium_2">One private Family Configuration session</li>
+          <li data-t="value_premium_3">3D ancestral-pattern map</li>
+          <li data-t="value_premium_4">Integration prompts and follow-up notes</li>
+        </ul>
+        <div class="value-actions">
+          <a class="btn btn-primary" href="https://calendly.com/belencarpio/session" target="_blank" rel="noopener" data-t="value_schedule">Schedule the premium pack</a>
+          <a class="btn btn-secondary" href="assets/session-preparation-a4.html" target="_blank" rel="noopener" data-t="value_prep">Open the A4 prep sheet</a>
+        </div>
+      </article>
+      <article class="value-card">
+        <span class="value-step">03</span>
+        <h3 data-t="value_group_title">Couples, family, or group work</h3>
+        <p data-t="value_group_copy">For patterns that involve more than one person, or when a group field can reveal belonging, exclusions, loyalties, and inherited roles more efficiently.</p>
+        <ul>
+          <li data-t="value_group_1">Couples or family configuration</li>
+          <li data-t="value_group_2">Private workshop format</li>
+          <li data-t="value_group_3">Custom quote after a short conversation</li>
+        </ul>
+      </article>
+    </div>
+    <p class="value-note" data-t="value_note">Financial reference point: a 15-20 session private-pay therapy arc at USD 100-200 per session can represent USD 1,500-4,000. That comparison is not a medical claim and does not make Family Configurations a substitute for therapy; it simply shows why a focused USD 300 systemic integration pack can be an efficient first step when the central question is a repeating family pattern.</p>
+  </section>
+
   <section class="light" id="contact">
     <div class="cta">
       <div>
@@ -1253,6 +1384,29 @@
         faq_5_a: "Belén’s 3D experience app supports spatial work by helping clients interact with ancestral patterns as configurations before, during or after sessions.",
         faq_6_q: "Is this therapy?",
         faq_6_a: "Family Configurations are a facilitated systemic process. If you are in clinical crisis or need medical or psychiatric care, this work should not replace licensed healthcare support.",
+        value_kicker: "Value ladder",
+        value_title: "Choose the level of support that matches the pattern.",
+        value_copy: "Start with one focused session, or use the premium integration pack when the pattern is important enough to prepare, map, and integrate with more structure.",
+        value_entry_title: "Single private session",
+        value_entry_copy: "A clear entry point for one theme: relationship loops, money blocks, belonging, grief, migration, family roles, or generational trauma.",
+        value_entry_1: "In person or over Zoom",
+        value_entry_2: "English or Spanish",
+        value_entry_3: "Best when you want to start gently",
+        value_premium_title: "Ancestral Pattern Integration Pack",
+        value_currency: "USD",
+        value_premium_copy: "The premium anchor: a prepared private process with the session, the 3D ancestral-pattern app, and a focused integration kit so the insight has somewhere to land.",
+        value_premium_1: "A4 session-preparation sheet",
+        value_premium_2: "One private Family Configuration session",
+        value_premium_3: "3D ancestral-pattern map",
+        value_premium_4: "Integration prompts and follow-up notes",
+        value_schedule: "Schedule the premium pack",
+        value_prep: "Open the A4 prep sheet",
+        value_group_title: "Couples, family, or group work",
+        value_group_copy: "For patterns that involve more than one person, or when a group field can reveal belonging, exclusions, loyalties, and inherited roles more efficiently.",
+        value_group_1: "Couples or family configuration",
+        value_group_2: "Private workshop format",
+        value_group_3: "Custom quote after a short conversation",
+        value_note: "Financial reference point: a 15-20 session private-pay therapy arc at USD 100-200 per session can represent USD 1,500-4,000. That comparison is not a medical claim and does not make Family Configurations a substitute for therapy; it simply shows why a focused USD 300 systemic integration pack can be an efficient first step when the central question is a repeating family pattern.",
         contact_kicker: "Start gently",
         contact_title: "Ask Belén whether family configurations are right for you.",
         contact_copy: "Schedule your session directly, complete payment, or send a short WhatsApp message first if you want to ask whether your theme is appropriate for this work.",
@@ -1354,6 +1508,29 @@
         faq_5_a: "La app de experiencia 3D de Belén apoya el trabajo espacial al ayudar a interactuar con patrones ancestrales como configuraciones antes, durante o después de las sesiones.",
         faq_6_q: "¿Esto es terapia?",
         faq_6_a: "Las Configuraciones Familiares son un proceso sistémico facilitado. Si estás en crisis clínica o necesitas atención médica o psiquiátrica, este trabajo no debe reemplazar el apoyo de profesionales de salud licenciados.",
+        value_kicker: "Escalera de valor",
+        value_title: "Elige el nivel de apoyo que corresponde al patrón.",
+        value_copy: "Empieza con una sesión enfocada, o usa el paquete premium de integración cuando el patrón merece preparación, mapa e integración con más estructura.",
+        value_entry_title: "Sesión privada individual",
+        value_entry_copy: "Una entrada clara para un tema: bucles de relación, bloqueos con dinero, pertenencia, duelo, migración, roles familiares o trauma generacional.",
+        value_entry_1: "Presencial o por Zoom",
+        value_entry_2: "Inglés o español",
+        value_entry_3: "Ideal cuando quieres empezar con calma",
+        value_premium_title: "Paquete de Integración de Patrones Ancestrales",
+        value_currency: "USD",
+        value_premium_copy: "El anchor premium: un proceso privado preparado con sesión, app 3D de patrones ancestrales y kit de integración para que la claridad tenga dónde aterrizar.",
+        value_premium_1: "Hoja A4 de preparación para la sesión",
+        value_premium_2: "Una sesión privada de Configuración Familiar",
+        value_premium_3: "Mapa 3D del patrón ancestral",
+        value_premium_4: "Prompts de integración y notas de seguimiento",
+        value_schedule: "Agendar el paquete premium",
+        value_prep: "Abrir la hoja A4 de preparación",
+        value_group_title: "Trabajo de pareja, familia o grupo",
+        value_group_copy: "Para patrones que involucran a más de una persona, o cuando el campo grupal permite ver pertenencias, exclusiones, lealtades y roles heredados con más eficiencia.",
+        value_group_1: "Configuración de pareja o familia",
+        value_group_2: "Formato de taller privado",
+        value_group_3: "Cotización personalizada tras una conversación breve",
+        value_note: "Punto de referencia financiero: un proceso de terapia privada de 15-20 sesiones a USD 100-200 por sesión puede representar USD 1,500-4,000. Esa comparación no es una afirmación médica y no convierte a las Configuraciones Familiares en sustituto de terapia; solo muestra por qué un paquete sistémico enfocado de USD 300 puede ser un primer paso eficiente cuando la pregunta central es un patrón familiar repetido.",
         contact_kicker: "Empieza con calma",
         contact_title: "Pregúntale a Belén si las configuraciones familiares son para ti.",
         contact_copy: "Agenda tu sesión directamente, completa el pago o envía primero un WhatsApp breve si quieres preguntar si tu tema es adecuado para este trabajo.",
