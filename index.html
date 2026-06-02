@@ -13,9 +13,6 @@
   <meta name="geo.placename" content="Cuenca, Ecuador">
   <meta name="keywords" content="family configurations, family constellations Cuenca, generational trauma, ancestral patterns, hidden loyalties, systemic therapy Cuenca, family healing Ecuador, Zoom family constellations, trauma-informed family work, Belén Carpio">
   <link rel="canonical" href="https://belencarpio.com/">
-  <link rel="alternate" hreflang="en" href="https://belencarpio.com/">
-  <link rel="alternate" hreflang="es" href="https://belencarpio.com/es/">
-  <link rel="alternate" hreflang="x-default" href="https://belencarpio.com/">
   <link rel="manifest" href="/site.webmanifest">
 
   <meta property="og:type" content="website">
@@ -1792,10 +1789,9 @@
     });
 
     try {
-      const pathLang = location.pathname.indexOf("/es/") === 0 ? "es" : "";
-      setLang(pathLang || localStorage.getItem("belen_lang") || "en");
+      setLang(localStorage.getItem("belen_lang") || "en");
     } catch (e) {
-      setLang(location.pathname.indexOf("/es/") === 0 ? "es" : "en");
+      setLang("en");
     }
   </script>
 </body>
