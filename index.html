@@ -99,7 +99,20 @@
           "email": "belencarpio@gmail.com",
           "contactType": "booking",
           "availableLanguage": ["English", "Spanish"]
-        }
+        },
+        "potentialAction": [
+          {
+            "@type": "ReserveAction",
+            "target": "https://calendly.com/belencarpio/session",
+            "name": "Schedule a Family Configurations session"
+          },
+          {
+            "@type": "PayAction",
+            "target": "https://www.paypal.com/ncp/payment/D4AZDG2R2353N",
+            "name": "Pay for a Family Configurations session"
+          }
+        ],
+        "paymentAccepted": ["PayPal"]
       },
       {
         "@type": "FAQPage",
@@ -396,6 +409,13 @@
       color: var(--white);
       background: rgba(255,255,255,.09);
       border-color: rgba(255,255,255,.52);
+    }
+
+    .btn-paypal {
+      color: #ffffff;
+      background: #006bbd;
+      border-color: #5db7ff;
+      box-shadow: 0 18px 38px rgba(0,0,0,.2);
     }
 
     .proof-row {
@@ -753,6 +773,16 @@
 
     .contact-box .btn { width: 100%; margin-top: 12px; }
 
+    .contact-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .contact-actions .btn {
+      margin-top: 0;
+    }
+
     .contact-direct {
       margin: 14px 0 0;
       color: var(--ink);
@@ -871,8 +901,8 @@
           <p class="lead" data-t="hero_lead">Belén Carpio helps adults see how generational trauma, hidden loyalties, and inherited family roles can keep scripting love, money, belonging, and self-trust.</p>
           <p class="hero-copy" data-t="hero_copy">This is the evolution of family constellations into family configurations: a clearer, more academically grounded language for systemic work that respects the body, the family field, and the lived story of each client. Sessions can happen in person, over Zoom, or with Belén’s 3D experience app for interacting with ancestral patterns.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#" onclick="openWA(); return false;" data-t="hero_cta">Book a discovery call</a>
-            <a class="btn btn-secondary" href="#method" data-t="hero_secondary">How it works</a>
+            <a class="btn btn-primary" href="https://calendly.com/belencarpio/session" target="_blank" rel="noopener" data-t="hero_cta">Schedule a session</a>
+            <a class="btn btn-secondary" href="#" onclick="openWA(); return false;" data-t="hero_secondary">Ask first on WhatsApp</a>
           </div>
           <div class="proof-row" aria-label="Highlights">
             <div class="proof" data-t="proof_1">Systemic lens<span>Family patterns, roles, exclusions, and belonging.</span></div>
@@ -1107,12 +1137,16 @@
       <div>
         <span class="kicker" data-t="contact_kicker">Start gently</span>
         <h2 data-t="contact_title">Ask Belén whether family configurations are right for you.</h2>
-        <p data-t="contact_copy">Send a short WhatsApp message. You can ask about private sessions, Zoom, group workshops, the 3D experience app, English-language availability, or whether your theme is appropriate for this work.</p>
+        <p data-t="contact_copy">Schedule your session directly, complete payment, or send a short WhatsApp message first if you want to ask whether your theme is appropriate for this work.</p>
       </div>
       <div class="contact-box">
         <label for="waMessage" data-t="message_label">Message to Belén</label>
         <textarea id="waMessage" data-t-placeholder="message_placeholder">Hi Belén, I would like to ask about a Family Configurations session in Cuenca. I am interested in working with generational trauma and repeated family patterns.</textarea>
-        <button class="btn btn-primary" type="button" onclick="openWA()" data-t="send_wa">Open WhatsApp</button>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://calendly.com/belencarpio/session" target="_blank" rel="noopener" data-t="schedule_btn">Schedule on Calendly</a>
+          <a class="btn btn-paypal" href="https://www.paypal.com/ncp/payment/D4AZDG2R2353N" target="_blank" rel="noopener" data-t="pay_btn">Pay with PayPal</a>
+          <button class="btn btn-secondary" type="button" onclick="openWA()" data-t="send_wa">Open WhatsApp</button>
+        </div>
         <p class="contact-direct"><span data-t="direct_contact">Direct contact:</span> <a href="tel:+15616018028">+1 (561) 601-8028</a> · <a href="mailto:belencarpio@gmail.com">belencarpio@gmail.com</a></p>
       </div>
     </div>
@@ -1137,8 +1171,8 @@
         hero_title: "Family Configurations <span class=\"script-word\">for inherited patterns</span>",
         hero_lead: "Belén Carpio helps adults see how generational trauma, hidden loyalties, and inherited family roles can keep scripting love, money, belonging, and self-trust.",
         hero_copy: "This is the evolution of family constellations into family configurations: a clearer, more academically grounded language for systemic work that respects the body, the family field, and the lived story of each client. Sessions can happen in person, over Zoom, or with Belén’s 3D experience app for interacting with ancestral patterns.",
-        hero_cta: "Book a discovery call",
-        hero_secondary: "How it works",
+        hero_cta: "Schedule a session",
+        hero_secondary: "Ask first on WhatsApp",
         proof_1: "Systemic lens<span>Family patterns, roles, exclusions, and belonging.</span>",
         proof_2: "Trauma-informed pace<span>Enough structure to feel safe, enough space for truth.</span>",
         proof_3: "3D + academic touch<span>An interactive ancestral-pattern app with systemic theory behind it.</span>",
@@ -1221,9 +1255,11 @@
         faq_6_a: "Family Configurations are a facilitated systemic process. If you are in clinical crisis or need medical or psychiatric care, this work should not replace licensed healthcare support.",
         contact_kicker: "Start gently",
         contact_title: "Ask Belén whether family configurations are right for you.",
-        contact_copy: "Send a short WhatsApp message. You can ask about private sessions, Zoom, group workshops, the 3D experience app, English-language availability, or whether your theme is appropriate for this work.",
+        contact_copy: "Schedule your session directly, complete payment, or send a short WhatsApp message first if you want to ask whether your theme is appropriate for this work.",
         message_label: "Message to Belén",
         message_placeholder: "Hi Belén, I would like to ask about a Family Configurations session. I am interested in generational trauma, repeated family patterns, Zoom availability, and the 3D ancestral-pattern app.",
+        schedule_btn: "Schedule on Calendly",
+        pay_btn: "Pay with PayPal",
         send_wa: "Open WhatsApp",
         direct_contact: "Direct contact:",
         footer: "Belén Carpio · Family Configurations · Cuenca, Ecuador · English / Spanish",
@@ -1236,8 +1272,8 @@
         hero_title: "Configuraciones Familiares <span class=\"script-word\">para patrones heredados</span>",
         hero_lead: "Belén Carpio ayuda a ver cómo el trauma generacional, las lealtades ocultas y los roles heredados pueden seguir escribiendo el amor, el dinero, la pertenencia y la confianza.",
         hero_copy: "Esta es la evolución de las constelaciones familiares hacia configuraciones familiares: un lenguaje más claro y con más sustento académico para un trabajo sistémico que respeta el cuerpo, el campo familiar y la historia vivida de cada cliente. Las sesiones pueden ser presenciales, por Zoom o con la app de experiencia 3D de Belén para interactuar con patrones ancestrales.",
-        hero_cta: "Agendar llamada inicial",
-        hero_secondary: "Cómo funciona",
+        hero_cta: "Agendar sesión",
+        hero_secondary: "Preguntar por WhatsApp",
         proof_1: "Mirada sistémica<span>Patrones familiares, roles, exclusiones y pertenencia.</span>",
         proof_2: "Ritmo informado por trauma<span>Estructura para sentir seguridad y espacio para la verdad.</span>",
         proof_3: "3D + toque académico<span>Una app interactiva de patrones ancestrales con teoría sistémica detrás.</span>",
@@ -1320,9 +1356,11 @@
         faq_6_a: "Las Configuraciones Familiares son un proceso sistémico facilitado. Si estás en crisis clínica o necesitas atención médica o psiquiátrica, este trabajo no debe reemplazar el apoyo de profesionales de salud licenciados.",
         contact_kicker: "Empieza con calma",
         contact_title: "Pregúntale a Belén si las configuraciones familiares son para ti.",
-        contact_copy: "Envía un WhatsApp breve. Puedes preguntar por sesiones privadas, Zoom, talleres grupales, la app de experiencia 3D, atención en inglés o si tu tema es adecuado para este trabajo.",
+        contact_copy: "Agenda tu sesión directamente, completa el pago o envía primero un WhatsApp breve si quieres preguntar si tu tema es adecuado para este trabajo.",
         message_label: "Mensaje para Belén",
         message_placeholder: "Hola Belén, quisiera preguntar por una sesión de Configuraciones Familiares. Me interesa trabajar trauma generacional, patrones familiares repetidos, disponibilidad por Zoom y la app 3D de patrones ancestrales.",
+        schedule_btn: "Agendar en Calendly",
+        pay_btn: "Pagar con PayPal",
         send_wa: "Abrir WhatsApp",
         direct_contact: "Contacto directo:",
         footer: "Belén Carpio · Configuraciones Familiares · Cuenca, Ecuador · Inglés / Español",
