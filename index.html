@@ -584,10 +584,10 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .photo-gallery {
+    .photo-strip {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      grid-auto-rows: 240px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: 260px;
       gap: 14px;
     }
 
@@ -602,6 +602,8 @@
 
     .photo-card.wide { grid-column: span 2; }
     .photo-card.tall { grid-row: span 2; }
+    .photo-strip .photo-card.wide { grid-column: auto; }
+    .photo-strip .photo-card.tall { grid-row: auto; }
 
     .photo-card img {
       width: 100%;
@@ -1011,7 +1013,7 @@
       .portrait-wrap img { height: auto; max-height: none; }
       .grid, .proof-row, .value-ladder, .prep-grid { grid-template-columns: 1fr; }
       .faq-list { grid-template-columns: 1fr; }
-      .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
+      .photo-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
       .brand span { display: none; }
     }
@@ -1035,7 +1037,7 @@
         font-size: 1.28em;
         line-height: .84;
       }
-      .photo-gallery { grid-template-columns: 1fr; grid-auto-rows: 255px; }
+      .photo-strip { grid-template-columns: 1fr; grid-auto-rows: 255px; }
       .photo-card.wide, .photo-card.tall { grid-column: span 1; grid-row: span 1; }
       .lead { font-size: 20px; }
       .btn { width: 100%; }
@@ -1207,13 +1209,13 @@
     </div>
   </section>
 
-  <section class="deep" id="session-images">
+  <section class="deep" id="private-work-images">
     <div class="section-head">
-      <span class="kicker" data-t="gallery_kicker">Private, Zoom and group work</span>
-      <h2 data-t="gallery_title">Sessions for the patterns that keep repeating.</h2>
-      <p data-t="gallery_copy">Work with Belén in Cuenca, over Zoom, in couples sessions, or in guided group configurations. The setting changes; the focus stays the same: seeing inherited patterns clearly enough to stop living from them automatically.</p>
+      <span class="kicker" data-t="gallery_private_kicker">Private work</span>
+      <h2 data-t="gallery_private_title">A serious setting for personal and relationship patterns.</h2>
+      <p data-t="gallery_private_copy">Private and couples sessions give sensitive material enough discretion and focus to be seen without rushing.</p>
     </div>
-    <div class="photo-gallery" aria-label="Therapy and session image gallery">
+    <div class="photo-strip" aria-label="Private and couples session images">
       <figure class="photo-card tall">
         <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7447254/pexels-photo-7447254.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mature couple seated together during a counseling conversation">
         <figcaption data-t="gallery_1">Private work for couples who want a serious, discreet setting.</figcaption>
@@ -1225,42 +1227,6 @@
       <figure class="photo-card wide">
         <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/3958377/pexels-photo-3958377.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Therapist speaking with a couple in a bright office">
         <figcaption data-t="gallery_3">A calm setting for themes that deserve privacy and focus.</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8560012/pexels-photo-8560012.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Well-dressed couple in a counseling session">
-        <figcaption data-t="gallery_4">Work for established couples and families with private material.</figcaption>
-      </figure>
-      <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545368/pexels-photo-7545368.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mature couple using a laptop at home">
-        <figcaption data-t="gallery_5">Zoom sessions for clients who travel, live abroad, or prefer home.</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5591274/pexels-photo-5591274.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mature woman smiling during a laptop video call">
-        <figcaption data-t="gallery_6">Online work can still feel personal, present, and well-held.</figcaption>
-      </figure>
-      <figure class="photo-card tall">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8439688/pexels-photo-8439688.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Couple using a laptop together in a refined home setting">
-        <figcaption data-t="gallery_7">A natural fit for expats, travelers, and private referrals.</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5336907/pexels-photo-5336907.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Professional woman in a quiet consultation setting">
-        <figcaption data-t="gallery_8">For people used to discretion, competence, and directness.</figcaption>
-      </figure>
-      <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8559994/pexels-photo-8559994.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Couple shaking hands after a consultation">
-        <figcaption data-t="gallery_9">A serious process can still feel practical and respectful.</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/27086983/pexels-photo-27086983.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant Latin American couple standing together outdoors">
-        <figcaption data-t="gallery_10">For expats and Latin American clients building a new chapter.</figcaption>
-      </figure>
-      <figure class="photo-card wide">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711030/pexels-photo-5711030.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Facilitator standing inside a group session circle">
-        <figcaption data-t="gallery_11">Facilitation turns the group into a careful instrument.</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545359/pexels-photo-7545359.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Older man using a laptop at home">
-        <figcaption data-t="gallery_12">The 3D app supports spatial work before, during, or after sessions.</figcaption>
       </figure>
     </div>
   </section>
@@ -1275,6 +1241,28 @@
         <p data-t="quote_copy">Generational trauma can travel as silence, loyalty, repetition, or a nervous system that learned the past before it could choose the present. This work does not promise magic. It offers a disciplined encounter with what has been carried.</p>
         <a class="btn btn-secondary" href="assets/session-preparation-a4.html" target="_blank" rel="noopener" data-t="prep_cta">Open the session prep sheet</a>
       </div>
+    </div>
+  </section>
+
+  <section class="light" id="online-work-images">
+    <div class="section-head">
+      <span class="kicker" data-t="gallery_online_kicker">Zoom and travel-friendly work</span>
+      <h2 data-t="gallery_online_title">Online sessions can still feel personal, present, and well-held.</h2>
+      <p data-t="gallery_online_copy">For clients outside Cuenca, expats, and people who travel often, Zoom keeps the work private without losing the guided structure of the session.</p>
+    </div>
+    <div class="photo-strip" aria-label="Zoom and remote session images">
+      <figure class="photo-card">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8560012/pexels-photo-8560012.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Well-dressed couple in a counseling session">
+        <figcaption data-t="gallery_4">Work for established couples and families with private material.</figcaption>
+      </figure>
+      <figure class="photo-card wide">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545368/pexels-photo-7545368.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mature couple using a laptop at home">
+        <figcaption data-t="gallery_5">Zoom sessions for clients who travel, live abroad, or prefer home.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5591274/pexels-photo-5591274.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mature woman smiling during a laptop video call">
+        <figcaption data-t="gallery_6">Online work can still feel personal, present, and well-held.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -1321,6 +1309,28 @@
         <summary data-t="faq_9_q">Can this be used for business or projects?</summary>
         <p data-t="faq_9_a">Yes. Business and organizational configurations can explore roles, teams, projects, money flow, leadership dynamics, and hidden tensions in a professional system.</p>
       </details>
+    </div>
+  </section>
+
+  <section class="deep" id="group-work-images">
+    <div class="section-head">
+      <span class="kicker" data-t="gallery_group_kicker">Group and systemic space</span>
+      <h2 data-t="gallery_group_title">Some patterns become clearer when they are seen in a wider field.</h2>
+      <p data-t="gallery_group_copy">Group configurations, private referrals, and the 3D app can make roles, distance, belonging, and inherited loyalties easier to observe.</p>
+    </div>
+    <div class="photo-strip" aria-label="Group and systemic work images">
+      <figure class="photo-card tall">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8439688/pexels-photo-8439688.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Couple using a laptop together in a refined home setting">
+        <figcaption data-t="gallery_7">A natural fit for expats, travelers, and private referrals.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5336907/pexels-photo-5336907.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Professional woman in a quiet consultation setting">
+        <figcaption data-t="gallery_8">For people used to discretion, competence, and directness.</figcaption>
+      </figure>
+      <figure class="photo-card wide">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8559994/pexels-photo-8559994.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Couple shaking hands after a consultation">
+        <figcaption data-t="gallery_9">A serious process can still feel practical and respectful.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -1402,6 +1412,28 @@
       </article>
     </div>
     <p class="value-note" data-t="value_note">Financial reference point: a 15-20 session private-pay therapy arc at USD 100-200 per session can represent USD 1,500-4,000. That comparison is not a medical claim and does not make Family Configurations a substitute for therapy; it simply shows why a focused USD 300 systemic integration pack can be an efficient first step when the central question is a repeating family pattern.</p>
+  </section>
+
+  <section class="light" id="begin-work-images">
+    <div class="section-head">
+      <span class="kicker" data-t="gallery_begin_kicker">Ready to begin</span>
+      <h2 data-t="gallery_begin_title">The format changes; the focus stays practical and respectful.</h2>
+      <p data-t="gallery_begin_copy">Whether the work begins in a private session, a group circle, or the 3D ancestral-pattern app, the next step is simply choosing the pattern you want to understand.</p>
+    </div>
+    <div class="photo-strip" aria-label="Beginning session work images">
+      <figure class="photo-card">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/27086983/pexels-photo-27086983.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant Latin American couple standing together outdoors">
+        <figcaption data-t="gallery_10">For expats and Latin American clients building a new chapter.</figcaption>
+      </figure>
+      <figure class="photo-card wide">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5711030/pexels-photo-5711030.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Facilitator standing inside a group session circle">
+        <figcaption data-t="gallery_11">Facilitation turns the group into a careful instrument.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/7545359/pexels-photo-7545359.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Older man using a laptop at home">
+        <figcaption data-t="gallery_12">The 3D app supports spatial work before, during, or after sessions.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="light" id="contact">
@@ -1509,6 +1541,18 @@
         gallery_kicker: "Private, Zoom and group work",
         gallery_title: "Sessions for the patterns that keep repeating.",
         gallery_copy: "Work with Belén in Cuenca, over Zoom, in couples sessions, or in guided group configurations. The setting changes; the focus stays the same: seeing inherited patterns clearly enough to stop living from them automatically.",
+        gallery_private_kicker: "Private work",
+        gallery_private_title: "A serious setting for personal and relationship patterns.",
+        gallery_private_copy: "Private and couples sessions give sensitive material enough discretion and focus to be seen without rushing.",
+        gallery_online_kicker: "Zoom and travel-friendly work",
+        gallery_online_title: "Online sessions can still feel personal, present, and well-held.",
+        gallery_online_copy: "For clients outside Cuenca, expats, and people who travel often, Zoom keeps the work private without losing the guided structure of the session.",
+        gallery_group_kicker: "Group and systemic space",
+        gallery_group_title: "Some patterns become clearer when they are seen in a wider field.",
+        gallery_group_copy: "Group configurations, private referrals, and the 3D app can make roles, distance, belonging, and inherited loyalties easier to observe.",
+        gallery_begin_kicker: "Ready to begin",
+        gallery_begin_title: "The format changes; the focus stays practical and respectful.",
+        gallery_begin_copy: "Whether the work begins in a private session, a group circle, or the 3D ancestral-pattern app, the next step is simply choosing the pattern you want to understand.",
         gallery_1: "Private work for couples who want a serious, discreet setting.",
         gallery_2: "Relationship sessions for loyalty, conflict, belonging, and repair.",
         gallery_3: "A calm setting for themes that deserve privacy and focus.",
@@ -1665,6 +1709,18 @@
         gallery_kicker: "Trabajo privado, por Zoom y grupal",
         gallery_title: "Sesiones para los patrones que se siguen repitiendo.",
         gallery_copy: "Trabaja con Belén en Cuenca, por Zoom, en sesiones de pareja o en configuraciones grupales guiadas. El formato cambia; el foco se mantiene: ver los patrones heredados con suficiente claridad para dejar de vivirlos en automático.",
+        gallery_private_kicker: "Trabajo privado",
+        gallery_private_title: "Un espacio serio para patrones personales y de relación.",
+        gallery_private_copy: "Las sesiones privadas y de pareja dan al material sensible suficiente discreción y foco para ser visto sin prisa.",
+        gallery_online_kicker: "Trabajo por Zoom y para viajeros",
+        gallery_online_title: "Las sesiones online también pueden sentirse personales, presentes y bien sostenidas.",
+        gallery_online_copy: "Para clientes fuera de Cuenca, expats y personas que viajan con frecuencia, Zoom mantiene la privacidad sin perder la estructura guiada de la sesión.",
+        gallery_group_kicker: "Espacio grupal y sistémico",
+        gallery_group_title: "Algunos patrones se vuelven más claros cuando se ven en un campo más amplio.",
+        gallery_group_copy: "Las configuraciones grupales, los referidos privados y la app 3D pueden hacer más visibles los roles, la distancia, la pertenencia y las lealtades heredadas.",
+        gallery_begin_kicker: "Listo para empezar",
+        gallery_begin_title: "El formato cambia; el foco se mantiene práctico y respetuoso.",
+        gallery_begin_copy: "Ya sea que el trabajo empiece en una sesión privada, un círculo grupal o la app 3D de patrones ancestrales, el siguiente paso es elegir el patrón que quieres comprender.",
         gallery_1: "Trabajo privado para parejas que buscan un espacio serio y discreto.",
         gallery_2: "Sesiones de pareja para lealtad, conflicto, pertenencia y reparación.",
         gallery_3: "Un entorno tranquilo para temas que merecen privacidad y foco.",
