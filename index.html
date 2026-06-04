@@ -584,6 +584,99 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
+    .app-showcase {
+      background: linear-gradient(135deg, #1b1026, #2b183b 52%, #1b1026);
+      color: #ffffff;
+    }
+
+    .app-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      gap: clamp(24px, 5vw, 64px);
+      align-items: center;
+    }
+
+    .app-copy {
+      display: grid;
+      gap: 16px;
+    }
+
+    .app-copy .section-head {
+      margin-bottom: 0;
+    }
+
+    .app-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .app-point {
+      padding: 16px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.34);
+    }
+
+    .app-point strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 950;
+    }
+
+    .app-point span {
+      color: #f2f2f2;
+      font-size: 14px;
+      font-weight: 650;
+      line-height: 1.45;
+    }
+
+    .app-visuals {
+      display: grid;
+      gap: 14px;
+    }
+
+    .app-primary-image,
+    .app-support-image {
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.34);
+      background: #12091a;
+      box-shadow: var(--shadow);
+    }
+
+    .app-primary-image img,
+    .app-support-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .app-primary-image img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .app-support-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .app-support-image img {
+      aspect-ratio: 4 / 3;
+    }
+
+    .app-caption {
+      margin: 0;
+      color: #f2f2f2;
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
     .photo-strip {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1007,11 +1100,12 @@
     [hidden] { display: none !important; }
 
     @media (max-width: 920px) {
-      .hero, .split, .quote-band, .cta { grid-template-columns: 1fr; }
+      .hero, .split, .quote-band, .cta, .app-layout { grid-template-columns: 1fr; }
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
       .grid, .proof-row, .value-ladder, .prep-grid { grid-template-columns: 1fr; }
+      .app-points { grid-template-columns: 1fr; }
       .faq-list { grid-template-columns: 1fr; }
       .photo-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
       .topbar { align-items: flex-start; }
@@ -1037,6 +1131,7 @@
         font-size: 1.28em;
         line-height: .84;
       }
+      .app-support-grid { grid-template-columns: 1fr; }
       .photo-strip { grid-template-columns: 1fr; grid-auto-rows: 255px; }
       .photo-card.wide, .photo-card.tall { grid-column: span 1; grid-row: span 1; }
       .lead { font-size: 20px; }
@@ -1189,8 +1284,8 @@
         </ul>
       </article>
       <article class="card">
-        <h3 data-t="app_title">3D experience app</h3>
-        <p data-t="app_copy">Belén’s new 3D experience app lets clients interact with ancestral patterns as spatial configurations, making abstract loyalties and generational trauma easier to see.</p>
+        <h3 data-t="app_title">3D tool</h3>
+        <p data-t="app_copy">Belén’s 3D tool lets clients and facilitators interact with ancestral patterns as spatial configurations, making abstract loyalties and generational trauma easier to see.</p>
         <ul>
           <li data-t="app_1">Visual, embodied mapping</li>
           <li data-t="app_2">Ancestral-pattern interaction</li>
@@ -1206,6 +1301,51 @@
           <li data-t="business_3">Available by private consultation</li>
         </ul>
       </article>
+    </div>
+  </section>
+
+  <section class="app-showcase" id="3d-tool">
+    <div class="app-layout">
+      <div class="app-copy">
+        <div class="section-head">
+          <span class="kicker" data-t="tool_kicker">3D tool</span>
+          <h2 data-t="tool_title">Together, we can fix it on a clear 3D board.</h2>
+          <p data-t="tool_copy">Bel&eacute;n's 3D tool creates an online board where a client, facilitator, coach, or consultant can place people, symbols, tensions, and desired outcomes in space. The work becomes easier to follow, more intuitive to guide, and more memorable for the person receiving it.</p>
+        </div>
+        <div class="app-points" aria-label="3D tool benefits">
+          <div class="app-point">
+            <strong data-t="tool_point_1_title">Clear online board</strong>
+            <span data-t="tool_point_1_copy">A visual environment for one-on-one coaching, workshops, demos, trainings, and guided online sessions.</span>
+          </div>
+          <div class="app-point">
+            <strong data-t="tool_point_2_title">Spatial understanding</strong>
+            <span data-t="tool_point_2_copy">Clients can see distance, direction, roles, and what is asking to be observed.</span>
+          </div>
+          <div class="app-point">
+            <strong data-t="tool_point_3_title">Facilitator support</strong>
+            <span data-t="tool_point_3_copy">The tool helps make the work easier for the professional and more effective for the client.</span>
+          </div>
+          <div class="app-point">
+            <strong data-t="tool_point_4_title">Memorable insight</strong>
+            <span data-t="tool_point_4_copy">An interactive configuration can create surprising clarity that clients remember after the session.</span>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="#" onclick="openWA(); return false;" data-t="tool_cta">Ask Bel&eacute;n about the 3D tool</a>
+      </div>
+      <div class="app-visuals" aria-label="3D tool images">
+        <figure class="app-primary-image">
+          <img loading="lazy" decoding="async" src="assets/app-personalizado-belen.png" alt="Bel&eacute;n's official 3D online board with figures arranged on a white surface over a purple background">
+        </figure>
+        <div class="app-support-grid">
+          <figure class="app-support-image">
+            <img loading="lazy" decoding="async" src="assets/app-constellation-support.png" alt="3D figures connected in a systemic constellation">
+          </figure>
+          <figure class="app-support-image">
+            <img loading="lazy" decoding="async" src="assets/app-workshop-board-support.png" alt="Colorful 3D figures arranged around an online workshop board">
+          </figure>
+        </div>
+        <p class="app-caption" data-t="tool_caption">Official 3D board image shown first; supporting views show how online configurations can look in coaching, workshop, and training contexts.</p>
+      </div>
     </div>
   </section>
 
@@ -1528,11 +1668,24 @@
         group_1: "Community and resonance",
         group_2: "Efficient entry point",
         group_3: "Strong for belonging themes",
-        app_title: "3D experience app",
-        app_copy: "Belén’s new 3D experience app lets clients interact with ancestral patterns as spatial configurations, making abstract loyalties and generational trauma easier to see.",
+        app_title: "3D tool",
+        app_copy: "Belén’s 3D tool lets clients and facilitators interact with ancestral patterns as spatial configurations, making abstract loyalties and generational trauma easier to see.",
         app_1: "Visual, embodied mapping",
         app_2: "Ancestral-pattern interaction",
         app_3: "Designed to support sessions",
+        tool_kicker: "3D tool",
+        tool_title: "Together, we can fix it on a clear 3D board.",
+        tool_copy: "Belén's 3D tool creates an online board where a client, facilitator, coach, or consultant can place people, symbols, tensions, and desired outcomes in space. The work becomes easier to follow, more intuitive to guide, and more memorable for the person receiving it.",
+        tool_point_1_title: "Clear online board",
+        tool_point_1_copy: "A visual environment for one-on-one coaching, workshops, demos, trainings, and guided online sessions.",
+        tool_point_2_title: "Spatial understanding",
+        tool_point_2_copy: "Clients can see distance, direction, roles, and what is asking to be observed.",
+        tool_point_3_title: "Facilitator support",
+        tool_point_3_copy: "The tool helps make the work easier for the professional and more effective for the client.",
+        tool_point_4_title: "Memorable insight",
+        tool_point_4_copy: "An interactive configuration can create surprising clarity that clients remember after the session.",
+        tool_cta: "Ask Belén about the 3D tool",
+        tool_caption: "Official 3D board image shown first; supporting views show how online configurations can look in coaching, workshop, and training contexts.",
         business_title: "Business and organizational configurations",
         business_copy: "Systemic work can also look at organizations, projects, leadership roles, money flow, and professional dynamics through the same spatial intelligence used in family systems.",
         business_1: "Useful for projects and teams",
@@ -1696,11 +1849,24 @@
         group_1: "Comunidad y resonancia",
         group_2: "Entrada eficiente al método",
         group_3: "Potente para pertenencia",
-        app_title: "App de experiencia 3D",
-        app_copy: "La nueva app de experiencia 3D de Belén permite interactuar con patrones ancestrales como configuraciones espaciales, haciendo más visibles las lealtades abstractas y el trauma generacional.",
+        app_title: "Herramienta 3D",
+        app_copy: "La herramienta 3D de Belén permite que clientes y facilitadores interactúen con patrones ancestrales como configuraciones espaciales, haciendo más visibles las lealtades abstractas y el trauma generacional.",
         app_1: "Mapa visual y corporal",
         app_2: "Interacción con patrones ancestrales",
         app_3: "Diseñada para apoyar sesiones",
+        tool_kicker: "Herramienta 3D",
+        tool_title: "Juntos podemos trabajarlo en un tablero 3D claro.",
+        tool_copy: "La herramienta 3D de Belén crea un tablero online donde una persona, facilitadora, coach o consultora puede ubicar personas, símbolos, tensiones y resultados deseados en el espacio. El trabajo se vuelve más fácil de seguir, más intuitivo de guiar y más memorable para quien lo recibe.",
+        tool_point_1_title: "Tablero online claro",
+        tool_point_1_copy: "Un entorno visual para coaching uno a uno, talleres, demos, formaciones y sesiones online guiadas.",
+        tool_point_2_title: "Comprensión espacial",
+        tool_point_2_copy: "Los clientes pueden ver distancia, dirección, roles y aquello que pide ser observado.",
+        tool_point_3_title: "Apoyo al facilitador",
+        tool_point_3_copy: "La herramienta ayuda a que el trabajo sea más fácil para el profesional y más efectivo para el cliente.",
+        tool_point_4_title: "Insight memorable",
+        tool_point_4_copy: "Una configuración interactiva puede crear una claridad sorprendente que el cliente recuerda después de la sesión.",
+        tool_cta: "Preguntar a Belén por la herramienta 3D",
+        tool_caption: "La imagen oficial del tablero 3D aparece primero; las vistas de apoyo muestran cómo pueden verse las configuraciones online en coaching, talleres y formaciones.",
         business_title: "Configuraciones empresariales y organizacionales",
         business_copy: "El trabajo sistémico también puede mirar organizaciones, proyectos, roles de liderazgo, flujo de dinero y dinámicas profesionales con la misma inteligencia espacial usada en sistemas familiares.",
         business_1: "Útil para proyectos y equipos",
