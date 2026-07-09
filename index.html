@@ -1112,12 +1112,95 @@
 
     [hidden] { display: none !important; }
 
+    /* --- credentials section --- */
+    .cred-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      max-width: 860px;
+    }
+
+    .cred-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 28px 28px 22px;
+      border: 2px solid var(--rose-dark);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .cred-card:hover {
+      border-color: var(--rose);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .cred-name {
+      font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .cred-desc {
+      font-size: 15px;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    .cred-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--rose-dark);
+      margin-top: 4px;
+    }
+
+    /* --- testimonials section --- */
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .test-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 28px 22px;
+    }
+
+    .test-quote {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .test-quote p {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #e8e4f0;
+    }
+
+    .test-author {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.03em;
+    }
+
     @media (max-width: 920px) {
       .hero, .split, .quote-band, .cta, .app-layout { grid-template-columns: 1fr; }
       .hero { padding-top: 36px; }
       .hero-media { min-height: 0; }
       .portrait-wrap img { height: auto; max-height: none; }
-      .grid, .proof-row, .value-ladder, .prep-grid { grid-template-columns: 1fr; }
+      .grid, .proof-row, .value-ladder, .prep-grid, .cred-grid, .test-grid { grid-template-columns: 1fr; }
       .app-points { grid-template-columns: 1fr; }
       .faq-list { grid-template-columns: 1fr; }
       .photo-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 230px; }
@@ -1259,6 +1342,26 @@
           </article>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION: credentials — ISCA Network + CUDEC diplomados avales -->
+  <section class="light" id="credentials">
+    <div class="section-head">
+      <span class="kicker" data-t="cred_kicker">Formación y avales</span>
+      <h2 data-t="cred_title">Formación certificada en constelaciones y configuraciones sistémicas.</h2>
+    </div>
+    <div class="cred-grid">
+      <a class="cred-card" href="https://isca-network.org/" target="_blank" rel="noopener">
+        <span class="cred-name">ISCA Network</span>
+        <span class="cred-desc" data-t="cred_isca">International Systemic Constellations Association — formación y certificación en constelaciones sistémicas.</span>
+        <span class="cred-link" aria-hidden="true">isca-network.org ↗</span>
+      </a>
+      <a class="cred-card" href="https://universidadcudec.com/diplomado" target="_blank" rel="noopener">
+        <span class="cred-name">Universidad CUDEC</span>
+        <span class="cred-desc" data-t="cred_cudec">Diplomado universitario en constelaciones familiares y trabajo sistémico — Universidad CUDEC, México.</span>
+        <span class="cred-link" aria-hidden="true">universidadcudec.com ↗</span>
+      </a>
     </div>
   </section>
 
@@ -1464,6 +1567,32 @@
         <summary data-t="faq_9_q">Can this be used for business or projects?</summary>
         <p data-t="faq_9_a">Yes. Business and organizational configurations can explore roles, teams, projects, money flow, leadership dynamics, and hidden tensions in a professional system.</p>
       </details>
+    </div>
+  </section>
+
+  <!-- SECTION: testimonials — Diana + segunda participante -->
+  <section class="deep" id="testimonials">
+    <div class="section-head">
+      <span class="kicker" data-t="test_kicker">Experiencias</span>
+      <h2 data-t="test_title">Lo que dicen quienes han vivido el proceso.</h2>
+    </div>
+    <div class="test-grid">
+      <article class="test-card">
+        <blockquote class="test-quote">
+          <p data-t="test_diana_1">"Hay una frase que dice: como te ven, te tratan. Y la realidad es que, como uno ve la vida, la vida lo trata a uno. Esta constelación me ayudó a ver la vida con amor, y es así como siento que la vida me trata ahora."</p>
+          <p data-t="test_diana_2">"Estuve mucho tiempo enojada, ansiosa, incómoda, y no encontraba el por qué. Ahora puedo entender y ver el origen desde otra perspectiva. Qué bueno es poder aceptar y honrar mi camino, bajar la guardia y sentirme tranquila."</p>
+          <p data-t="test_diana_3">"Esta es una herramienta muy poderosa para quienes quieren y están dispuestos a hacer algo diferente para disfrutar cada momento, para estar aquí y ahora, para conectar con todo lo bueno que merecemos."</p>
+        </blockquote>
+        <footer class="test-author">— Diana</footer>
+      </article>
+      <article class="test-card">
+        <blockquote class="test-quote">
+          <p data-t="test_b_1">"Fue una experiencia muy inolvidable y extraordinaria el sentir y ver cómo parte de mis problemas están conectados a través de mi linaje femenino y masculino, y cómo sus traumas, relaciones y emociones son transmitidos a mi vida."</p>
+          <p data-t="test_b_2">"Pude aclarar muchas cosas que quería sanar y no podía. Un dolor de espalda que tuve muchos años desapareció después de ver que cargaba las emociones reprimidas de mi abuela materna. Después de la constelación pude aceptar, agradecer y devolver eso a ella — y el dolor no volvió."</p>
+          <p data-t="test_b_3">"Lo recomiendo a quienes sienten que repiten patrones, que no entienden su dolor o su frustración, y buscan ver el origen desde otro lugar."</p>
+        </blockquote>
+        <footer class="test-author" data-t="test_b_author">— Participante, Cuenca</footer>
+      </article>
     </div>
   </section>
 
@@ -1814,7 +1943,20 @@
         final_wa_copy: "Send a short message with the pattern you want to understand. Belén can tell you whether a private session, Zoom, group work, or the 3D ancestral-pattern experience is the right starting point.",
         final_wa_btn: "Write on WhatsApp",
         footer: "Belén Carpio · Family Configurations · Cuenca, Ecuador · English / Spanish · Designed and powered by <a href=\"https://jfcarpio.com/\" target=\"_blank\" rel=\"noopener\">jfcarpio.com</a>",
-        floating_wa: "WhatsApp Belén"
+        floating_wa: "WhatsApp Belén",
+        cred_kicker: "Training and credentials",
+        cred_title: "Certified training in systemic constellations and configurations.",
+        cred_isca: "International Systemic Constellations Association — training and certification in systemic constellations.",
+        cred_cudec: "University diploma in family constellations and systemic work — Universidad CUDEC, Mexico.",
+        test_kicker: "Experiences",
+        test_title: "What people who have lived the process say.",
+        test_diana_1: '"There is a saying: how you are seen is how you are treated. The truth is, how you see life is how life treats you. This constellation helped me see life with love — and that is how I feel life treats me now."',
+        test_diana_2: '"I was angry, anxious, and uncomfortable for a long time without knowing why. Now I can understand and see the origin from a different perspective. What a gift it is to accept and honor my path, to lower my guard and feel calm."',
+        test_diana_3: '"This is a very powerful tool for those who want and are ready to do something different — to enjoy each moment, to be here and now, to connect with all the good we deserve."',
+        test_b_1: '"It was an unforgettable and extraordinary experience to feel and see how part of my problems are connected through my maternal and paternal lineages — how their traumas, relationships, and emotions are transmitted into my life."',
+        test_b_2: '"I was able to clarify many things I had been suffering from and could not heal. A back pain I had for many years disappeared after I saw I was carrying my maternal grandmother\'s repressed grief. After the constellation I accepted, gave thanks, and returned it to her — and the pain did not come back."',
+        test_b_3: '"I recommend this to anyone who feels they are repeating patterns, who does not understand their pain or frustration, and who wants to see the origin from a different place."',
+        test_b_author: "— Participant, Cuenca"
       },
       es: {
         brand_sub: "Configuraciones Familiares",
@@ -1997,7 +2139,20 @@
         final_wa_copy: "Envía un mensaje breve con el patrón que quieres comprender. Belén puede decirte si conviene empezar por una sesión privada, Zoom, trabajo grupal o la experiencia 3D de patrones ancestrales.",
         final_wa_btn: "Escribir por WhatsApp",
         footer: "Belén Carpio · Configuraciones Familiares · Cuenca, Ecuador · Inglés / Español · Designed and powered by <a href=\"https://jfcarpio.com/\" target=\"_blank\" rel=\"noopener\">jfcarpio.com</a>",
-        floating_wa: "WhatsApp Belén"
+        floating_wa: "WhatsApp Belén",
+        cred_kicker: "Formación y avales",
+        cred_title: "Formación certificada en constelaciones y configuraciones sistémicas.",
+        cred_isca: "International Systemic Constellations Association — formación y certificación en constelaciones sistémicas.",
+        cred_cudec: "Diplomado universitario en constelaciones familiares y trabajo sistémico — Universidad CUDEC, México.",
+        test_kicker: "Experiencias",
+        test_title: "Lo que dicen quienes han vivido el proceso.",
+        test_diana_1: '"Hay una frase que dice: como te ven, te tratan. Y la realidad es que, como uno ve la vida, la vida lo trata a uno. Esta constelación me ayudó a ver la vida con amor, y es así como siento que la vida me trata ahora."',
+        test_diana_2: '"Estuve mucho tiempo enojada, ansiosa, incómoda, y no encontraba el por qué. Ahora puedo entender y ver el origen desde otra perspectiva. Qué bueno es poder aceptar y honrar mi camino, bajar la guardia y sentirme tranquila."',
+        test_diana_3: '"Esta es una herramienta muy poderosa para quienes quieren y están dispuestos a hacer algo diferente para disfrutar cada momento, para estar aquí y ahora, para conectar con todo lo bueno que merecemos."',
+        test_b_1: '"Fue una experiencia muy inolvidable y extraordinaria el sentir y ver cómo parte de mis problemas están conectados a través de mi linaje femenino y masculino, y cómo sus traumas, relaciones y emociones son transmitidos a mi vida."',
+        test_b_2: '"Pude aclarar muchas cosas que quería sanar y no podía. Un dolor de espalda que tuve muchos años desapareció después de ver que cargaba las emociones reprimidas de mi abuela materna. Después de la constelación pude aceptar, agradecer y devolver eso a ella — y el dolor no volvió."',
+        test_b_3: '"Lo recomiendo a quienes sienten que repiten patrones, que no entienden su dolor o su frustración, y buscan ver el origen desde otro lugar."',
+        test_b_author: "— Participante, Cuenca"
       }
     };
 
