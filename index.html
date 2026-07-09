@@ -661,9 +661,15 @@
       aspect-ratio: 16 / 10;
     }
 
+    /* Cari portrait — taller crop to show the full figure */
+    .cari-figure img {
+      aspect-ratio: 3 / 4;
+      object-position: center top;
+    }
+
     .app-support-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
 
@@ -1449,11 +1455,16 @@
         <a class="btn btn-primary" href="#" onclick="openWA(); return false;" data-t="tool_cta">Ask Bel&eacute;n about the 3D tool</a>
       </div>
       <div class="app-visuals" aria-label="3D tool images">
-        <figure class="app-primary-image">
-          <img loading="lazy" decoding="async" src="assets/app-personalizado-belen.png" alt="Cecilios 3D online board customized for Bel&eacute;n's work with figures arranged on a white surface over a purple background">
-          <figcaption data-t="tool_image_1_caption">Bel&eacute;n demonstrates a live configuration on her customized Cecilios 3D board.</figcaption>
+        <!-- Cari — mascota amigable del tablero 3D. Imagen: assets/Cari.jpeg -->
+        <figure class="app-primary-image cari-figure">
+          <img loading="lazy" decoding="async" src="assets/Cari.jpeg" alt="Cari, the friendly green figure on Belén's 3D board — a smiling character that helps clients feel at ease with the configuration process">
+          <figcaption data-t="cari_caption">This is Cari. She makes the 3D board feel approachable — a friendly presence in a serious process.</figcaption>
         </figure>
         <div class="app-support-grid">
+          <figure class="app-support-image">
+            <img loading="lazy" decoding="async" src="assets/app-personalizado-belen.png" alt="Cecilios 3D online board customized for Belén's work with figures arranged on a white surface over a purple background">
+            <figcaption data-t="tool_image_1_caption">Belén demonstrates a live configuration on her customized Cecilios 3D board.</figcaption>
+          </figure>
           <figure class="app-support-image">
             <img loading="lazy" decoding="async" src="assets/app-constellation-support.png" alt="3D figures connected in a systemic constellation">
             <figcaption data-t="tool_image_2_caption">Connected figures make distance, roles, and relationship patterns easier to observe.</figcaption>
@@ -1944,6 +1955,7 @@
         final_wa_btn: "Write on WhatsApp",
         footer: "Belén Carpio · Family Configurations · Cuenca, Ecuador · English / Spanish · Designed and powered by <a href=\"https://jfcarpio.com/\" target=\"_blank\" rel=\"noopener\">jfcarpio.com</a>",
         floating_wa: "WhatsApp Belén",
+        cari_caption: "This is Cari. She makes the 3D board feel approachable — a friendly presence in a serious process.",
         cred_kicker: "Training and credentials",
         cred_title: "Certified training in systemic constellations and configurations.",
         cred_isca: "International Systemic Constellations Association — training and certification in systemic constellations.",
@@ -2140,6 +2152,7 @@
         final_wa_btn: "Escribir por WhatsApp",
         footer: "Belén Carpio · Configuraciones Familiares · Cuenca, Ecuador · Inglés / Español · Designed and powered by <a href=\"https://jfcarpio.com/\" target=\"_blank\" rel=\"noopener\">jfcarpio.com</a>",
         floating_wa: "WhatsApp Belén",
+        cari_caption: "Esta es Cari. Hace que el tablero 3D se sienta accesible — una presencia amigable en un proceso serio.",
         cred_kicker: "Formación y avales",
         cred_title: "Formación certificada en constelaciones y configuraciones sistémicas.",
         cred_isca: "International Systemic Constellations Association — formación y certificación en constelaciones sistémicas.",
