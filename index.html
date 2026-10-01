@@ -1220,6 +1220,13 @@
       font-weight: 700;
       color: var(--gold);
       letter-spacing: 0.03em;
+      /* 2026-10-01 (JFC: "las cajas lucen demasiado grandes o vacias"): la firma es un
+         <footer> y heredaba la regla general del pie del SITIO (relleno 28px + 76px a los
+         lados, fondo oscuro, y 64px abajo en movil). Aqui se anula solo para la firma. */
+      padding: 14px 0 0;
+      background: none;
+      border-top: 1px solid rgba(255,255,255,.22);
+      margin-top: auto;
     }
 
     @media (max-width: 920px) {
