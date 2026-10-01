@@ -1182,9 +1182,12 @@
     }
 
     /* --- testimonials section --- */
+    .test-grid > .test-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
     .test-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      /* 2026-10-01: con un numero impar de testimonios, el ultimo ocupa el ancho completo
+         en vez de quedar solo en una columna (en movil ya es 1 columna). */
       gap: 24px;
     }
 
@@ -1622,6 +1625,16 @@
         </blockquote>
         <footer class="test-author" data-t="test_b_author">— Participante, Cuenca</footer>
       </article>
+      <!-- Testimonio 3 (JFC 2026-10-01): barras de acceso + constelacion. Texto TAL CUAL lo
+           escribio la participante (sin corregir). Firma: Paula (dato de JFC). -->
+      <article class="test-card">
+        <blockquote class="test-quote">
+          <p data-t="test_c_1">"Muy bonito, he tenido experiencia en otros ámbitos, especialmente con medicina ancestral, y me gustó mucho sentir que estabas presente y notar tu interés en ayudar. A veces el ego puede interferir y me hizo muy bien sentirte presente en ti misma y al mismo tiempo dispuesta a escuchar"</p>
+          <p data-t="test_c_2">"Pues algunas cosas que debido a la muerte no había podido revisar, nunca me había permitido explorar más bien"</p>
+          <p data-t="test_c_3">"Yo diría que a cualquiera, hoy en día tenemos muchas barras de acceso encima y no hay nada mejor que conectar desde la dulzura que tiene Belu"</p>
+        </blockquote>
+        <footer class="test-author" data-t="test_c_author">— Paula, profesional cuencana</footer>
+      </article>
     </div>
   </section>
 
@@ -1986,7 +1999,11 @@
         test_b_1: '"It was an unforgettable and extraordinary experience to feel and see how part of my problems are connected through my maternal and paternal lineages — how their traumas, relationships, and emotions are transmitted into my life."',
         test_b_2: '"I was able to clarify many things I had been suffering from and could not heal. A back pain I had for many years disappeared after I saw I was carrying my maternal grandmother\'s repressed grief. After the constellation I accepted, gave thanks, and returned it to her — and the pain did not come back."',
         test_b_3: '"I recommend this to anyone who feels they are repeating patterns, who does not understand their pain or frustration, and who wants to see the origin from a different place."',
-        test_b_author: "— Participant, Cuenca"
+        test_b_author: "— Participant, Cuenca",
+        test_c_1: '"Very beautiful. I have had experience in other fields, especially with ancestral medicine, and I really liked feeling that you were present and seeing your interest in helping. Sometimes the ego can get in the way, and it did me a lot of good to feel you present in yourself and, at the same time, willing to listen."',
+        test_c_2: '"Well, some things that, because of a death, I had not been able to look at. Rather, I had never allowed myself to explore them."',
+        test_c_3: '"I would say anyone. Nowadays we carry a lot of access bars on us, and there is nothing better than connecting from the sweetness Belu has."',
+        test_c_author: "— Paula, professional from Cuenca"
       },
       es: {
         brand_sub: "Configuraciones Familiares",
@@ -2183,7 +2200,11 @@
         test_b_1: '"Fue una experiencia muy inolvidable y extraordinaria el sentir y ver cómo parte de mis problemas están conectados a través de mi linaje femenino y masculino, y cómo sus traumas, relaciones y emociones son transmitidos a mi vida."',
         test_b_2: '"Pude aclarar muchas cosas que quería sanar y no podía. Un dolor de espalda que tuve muchos años desapareció después de ver que cargaba las emociones reprimidas de mi abuela materna. Después de la constelación pude aceptar, agradecer y devolver eso a ella — y el dolor no volvió."',
         test_b_3: '"Lo recomiendo a quienes sienten que repiten patrones, que no entienden su dolor o su frustración, y buscan ver el origen desde otro lugar."',
-        test_b_author: "— Participante, Cuenca"
+        test_b_author: "— Participante, Cuenca",
+        test_c_1: '"Muy bonito, he tenido experiencia en otros ámbitos, especialmente con medicina ancestral, y me gustó mucho sentir que estabas presente y notar tu interés en ayudar. A veces el ego puede interferir y me hizo muy bien sentirte presente en ti misma y al mismo tiempo dispuesta a escuchar"',
+        test_c_2: '"Pues algunas cosas que debido a la muerte no había podido revisar, nunca me había permitido explorar más bien"',
+        test_c_3: '"Yo diría que a cualquiera, hoy en día tenemos muchas barras de acceso encima y no hay nada mejor que conectar desde la dulzura que tiene Belu"',
+        test_c_author: "— Paula, profesional cuencana"
       }
     };
 
